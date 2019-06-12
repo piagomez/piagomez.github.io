@@ -2251,9 +2251,12 @@ ul.row, ul.row-sm {
     margin-left: 0px; }
 
 /*# sourceMappingURL=ui.css.map */
-
+button, button:focus{
+    outline: none;
+}
 body{
   color: #4c4f57;  
+  background-color: #3a5575;  
 }
 p{
   font-size: 14px;
@@ -2348,6 +2351,10 @@ header, .nav-link{
 }
 
 /* ========== MEGA MENU ==========*/
+
+.navbar-dark .navbar-toggler-icon{
+  /* Insertar asset de menu */
+}
 /* adds some margin below the link sets  */
 .navbar .dropdown-menu div[class*="col"] {
    margin-bottom:1rem;
@@ -2363,6 +2370,7 @@ header, .nav-link{
 .navbar-up {
   border-bottom: 1px #aaa solid;
   height: 40px;
+  display: none;
 }
 .navbar-up .navbar-nav {
     align-items: center;
@@ -2407,12 +2415,77 @@ header, .nav-link{
 .header-main .navbar-nav {
   margin: auto;
 }
+.header-main .navbar-main {
+  margin: auto;
+  margin-right: 0;
+}
 .header-main .navbar-nav .dropdown-toggle::after{
   display: block;
   margin: auto;
 }
+.navbar a{ 
+  color: #fff;
+}
 
+.navbar-toggler{
+  border:0;
+  color: #fff;
+}
+  .brand-wrap{
+    width: auto;
+  }
+
+.header-main {
+  height: 74px;
+}
 /* breakpoint and up - mega dropdown styles */
+@media media="only screen and (max-width: 1200px)" (max-width: 768px){
+
+  .navbar {
+    padding: 0;
+  }
+  .d-xs-none{
+    display: none;
+  }
+}
+@media screen and (max-width: 991px){
+  header {
+    height: 58px;
+    position: fixed;
+    z-index: 1015;
+    width: 100%;
+    right: 0;
+  }
+  .header-main {
+    padding: 0.5rem;
+  }
+  .navbar-main {
+    /*width: calc( 100% - 116px);*/
+  }
+  .header-main .brand-wrap{
+    margin: 0 !important;
+    width: 33.3333%;
+  }
+  .header-main .navbar-brand{
+    width: 33.3333%;
+  }
+  .header-main .navbar-main, .header-main .navbar-main{
+    width: 33.3333%;
+    padding: 0;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .d-xs-none{
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-main{
+    height: 74px;
+    padding: 0;
+  }
+}
 @media screen and (min-width: 992px) {
   
   /* remove the padding from the navbar so the dropdown hover state is not broken */
@@ -2435,8 +2508,18 @@ header, .nav-link{
   left:0;
   right:0;
 /*  height of nav-item  */
-    top: 84px;
+    top: 72px;
   color: #aaaaaa;
+}
+.dropdown-toggle::after{
+  transform: rotate(-90deg);
+  background-image: url("../images/icons/Trazado 302.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center left;
+  border: 0;
+  width: 7px;
+  height: 22px;
 }
 .navbar .dropdown-menu .vr {
   height: auto;
@@ -2547,7 +2630,7 @@ header, .nav-link{
 
 .section-header, .section-footer{   background-color: #3a5575;}
 .slider-main .item-slide {
-    height: 437px;
+    min-height: 437px;
     background: #000;}
 .section-intro aside{
   background: #3a5575;
@@ -2688,14 +2771,20 @@ header, .nav-link{
   height: 55.2px;
   list-style: none;
 }
+.section-3 {
+  background: #fff;
+}
+.figure-item img, .figure-product {
+  width: 100%;
+}
 .section-3 .figure-item{
-  width: 284px;
-  height: 284px;
+  width: auto;
+  height: auto;
   margin: auto;
 }
 .section-3 .figure-product{  
-  width: 306px;
-  height: 706px;
+  /*width: 306px;
+  height: 706px;*/
   margin: auto;
 }
 .section-3 .caption{   
@@ -2763,4 +2852,7 @@ header, .nav-link{
   background: #000000
 }
 
+.section-5 img{
+  width: 100%;
+}
 /* ========== HOME END ==========*/

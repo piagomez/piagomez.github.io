@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Bootstrap-ecommerce by Vosidiy">
 
-<title>UI KIT - Marketplace and Ecommerce html template</title>
+<title>Calper Footwear</title>
 
 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 
@@ -34,9 +34,12 @@
 <script src="plugins/slickslider/slick.min.js"></script>
 
 <!-- custom style -->
+<link href="css/responsive.css" rel="stylesheet" media="only screen and (max-width: 1200px)" >
 <link href="css/ui.css" rel="stylesheet" type="text/css"/>
-<link href="css/responsive.css" rel="stylesheet" media="only screen and (max-width: 1200px)" />
 
+<link href="./css/custom.css" rel="stylesheet">
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+<script src="./js/jquery.zeynep.min.js"></script>
 <!-- custom javascript -->
 <script src="js/script.js" type="text/javascript"></script>
 
@@ -55,8 +58,7 @@ $(document).ready(function() {
 <body class="relative" data-spy="scroll" data-target=".navbar-landing">
 
 <header class="section-header">
-
-	<nav class="navbar navbar-top navbar-expand-lg navbar-dark navbar-up  d-sm-none d-lg-block">
+	<nav class="navbar navbar-top navbar-expand-lg navbar-dark navbar-up d-lg-block d-sm-none">
 	  <div class="container">
 	    <div class="collapse navbar-collapse" id="navbarsExample07">
 	      <ul class="navbar-nav mr-auto">
@@ -77,24 +79,29 @@ $(document).ready(function() {
 	    </div> <!-- collapse.// -->
 	  </div>
 	</nav>
-	<section class="header-main shadow-sm ">
+
+	<section class="header-main">
 		<div class="container">
 			<div class="row align-items-center">
-				<div class="col-lg-3 col-sm-4">
+				<div class="navbar-brand col-lg-2 col-sm-4">
 					<div class="brand-wrap">
-						<img src="images/logo-calper-footwear-blanco.png"
-						     srcset="images/logo-calper-footwear-blanco@2x.png 2x,
-						             images/logo-calper-footwear-blanco@3x.png 3x"
+						<img src="images/logo-calper.png"
+						     srcset="images/logo-calper@2x.png 2x,
+						             images/logo-calper@3x.png 3x"
 						     class="logo LOGO-CALPER-FOOTWEAR-BLANCO">
 					</div> <!-- brand-wrap.// -->
 				</div>
-				<div class="col-lg-4 col-xl-5 col-sm-8 p-static">
+				<div class="navbar-main col-lg-4 col-xl-5 col-3 col-sm-2 p-static">
 					
 					<nav class="navbar navbar-top navbar-expand-lg navbar-dark p-static">
-						    <a href=""><span class="fa fa-search form-control-feedback   d-lg-none "></span></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
+						<a href=""><span class="fa fa-search form-control-feedback  d-lg-none "></span></a>
+
+						<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+						  <span class="navbar-toggler-icon"></span>
 						</button>
+						<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+						</button> -->
 
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav mr-auto">
@@ -248,7 +255,7 @@ $(document).ready(function() {
 					  <!--</div> -->
 					</nav>
 				</div> <!-- col.// -->
-				<div class="col-lg-5 col-xl-4 col-sm-12 d-sm-none d-lg-block">
+				<div class="col-lg-5 col-xl-4 col-sm-12 d-xs-none d-sm-none d-lg-block">
 					<div class=" float-right">
 						<form action="#" class="search-wrap">
 
@@ -265,6 +272,176 @@ $(document).ready(function() {
 	</section> <!-- header-main .// -->
 </header> <!-- section-header.// -->
 
+	<div class="zeynep">
+	  <ul>
+	    <li class="has-submenu">
+	      <a href="#" data-submenu="woman">Mujer</a>
+
+	      <div id="woman" class="submenu">
+	        <div class="submenu-header" data-submenu-close="woman">
+	          <a href="#">Mujer</a>
+	        </div>
+
+	        <ul>
+	          <li>
+	            <a href="#" data-submenu="catacteristics">Características</a>
+
+		        <div id="catacteristics" class="submenu">
+		          <div class="submenu-header" data-submenu-close="catacteristics">
+		            <a href="#">Características</a>
+		          </div>
+
+		          <label>Características</label>
+
+		          <ul>
+		            <li>
+		              <span><img src="" alt=""></span><a href="#">Antideslizante</a>
+		            </li>
+
+		            <li>
+		              <a href="#">Resistente a líquidos</a>
+		            </li>
+
+		            <li>
+		              <a href="#">Livianos</a>
+		            </li>
+
+		            <li>
+		              <a href="#">Ergonómicos</a>
+		            </li>
+
+		            <li>
+		              <a href="#">Fácil de limpiar</a>
+		            </li>
+
+		            <li>
+		              <a href="#">Peligro Eléctrico</a>
+		            </li>
+		          </ul>
+		        </div>
+	          </li>
+
+	          <li>
+	            <a href="#" data-submenu="calzado">Calzado</a>
+	          </li>
+
+	          <li>
+	            <a href="#" data-submenu="color">Color</a>
+	          </li>
+	          <li>
+	            <a href="#" data-submenu="rubro">Rubro</a>
+	          </li>
+	        </ul>
+	      </div>
+	    </li>
+
+	    <li class="has-submenu">
+	        <a href="#" data-submenu="man">Hombre</a>
+
+	        <div id="man" class="submenu">
+	          <div class="submenu-header" data-submenu-close="man">
+	            <a href="#">Hombre</a>
+	          </div>
+
+	          <ul>
+	            <li class="has-submenu">
+	              <a href="#" data-submenu="electronics">Electronics</a>
+
+	              <div id="electronics" class="submenu">
+	                <div class="submenu-header" data-submenu-close="electronics">
+	                  <a href="#">Categories</a>
+	                </div>
+
+	                <label>Electronics</label>
+
+	                <ul>
+	                  <li>
+	                    <a href="#">Camera & Photo</a>
+	                  </li>
+
+	                  <li>
+	                    <a href="#">Home Audio</a>
+	                  </li>
+
+	                  <li>
+	                    <a href="#">Tv & Video</a>
+	                  </li>
+
+	                  <li>
+	                    <a href="#">Computers & Accessories</a>
+	                  </li>
+
+	                  <li>
+	                    <a href="#">Car & Vehicle Electronics</a>
+	                  </li>
+
+	                  <li>
+	                    <a href="#">Portable Audio & Video</a>
+	                  </li>
+
+	                  <li>
+	                    <a href="#">Headphones</a>
+	                  </li>
+
+	                  <li>
+	                    <a href="#">Accessories & Supplies</a>
+	                  </li>
+
+	                  <li>
+	                    <a href="#">Video Projectors</a>
+	                  </li>
+
+	                  <li>
+	                    <a href="#">Office Electronics</a>
+	                  </li>
+
+	                  <li>
+	                    <a href="#">Wearable Technology</a>
+	                  </li>
+
+	                  <li>
+	                    <a href="#">Service Plans</a>
+	                  </li>
+	                </ul>
+	              </div>
+	            </li>
+
+	            <li>
+	              <a href="#">Books</a>
+	            </li>
+
+	            <li>
+	              <a href="#">Video Games</a>
+	            </li>
+
+	            <li>
+	              <a href="#">Computers</a>
+	            </li>
+	          </ul>
+	        </div>
+	      </li>
+
+	    <li>
+	      <a href="#">TECNOLOGÍAS</a>
+	    </li>
+
+	    <li>
+	      <a href="#">SOBRE CF</a>
+	    </li>
+	    <li>
+	      <a href="#">BLOG</a>
+	    </li>
+	    <li>
+	      <a href="#">CONTACTO</a>
+	    </li>
+	    <li>
+	      <a href="#">FAQS</a>
+	    </li>
+	  </ul>
+	</div>
+
+<div class="zeynep-overlay"></div>
+
 <!-- ========================= SECTION INTRO ========================= -->
 <section id="intro" class="section-intro ">
 	<div class="owl-init slider-main owl-carousel" data-items="1" data-nav="true" data-dots="false">
@@ -279,7 +456,32 @@ $(document).ready(function() {
 		</div>
 	</div>
 	<aside class="col-sm-12 text-center center">
-	<div class="slick-slider" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
+	<div class="slick-slider" data-slick='{"slidesToShow": 3, "slidesToScroll": 1, 
+  "responsive": [
+    {
+      "breakpoint": 1024,
+      "settings": {
+        "slidesToShow": 3,
+        "slidesToScroll": 1,
+        "infinite": true,
+        "dots": true
+      }
+    },
+    {
+      "breakpoint": 600,
+      "settings": {
+        "slidesToShow": 3,
+        "slidesToScroll": 1
+      }
+    },
+    {
+      "breakpoint": 480,
+      "settings": {
+        "slidesToShow": 1,
+        "slidesToScroll": 1
+      }
+    }
+}'>
 		<div class="item-slide ">
 			 <div class="card-banner">
 			  <div class="card-body white">
@@ -319,7 +521,7 @@ $(document).ready(function() {
 <!-- ========================= SECTION INTRO END// ========================= -->
 
 
-<!-- ========================= SECTION CONTENT // ========================= -->
+<!-- ========================= SECTION CONTENT 1 // ========================= -->
 <section class="section-content padding-y-lg bg-imgage-1 section-1">
 	<div class="container-fluid">
 		<div class="row">
@@ -339,9 +541,9 @@ $(document).ready(function() {
 		</div>
 	</div> <!-- container .//  -->
 </section>
-<!-- ========================= SECTION CONTENT END// ========================= -->
+<!-- ========================= SECTION CONTENT 1 END// ========================= -->
 
-<!-- ========================= SECTION CONTENT // ========================= -->
+<!-- ========================= SECTION CONTENT 2 // ========================= -->
 <section class="section-content padding-y-lg bg-image-2 section-2">
 	<div class="container-fluid">
 		<div class="row align-items-center">
@@ -428,9 +630,9 @@ $(document).ready(function() {
 
 	</div> <!-- container .//  -->
 </section>
-<!-- ========================= SECTION CONTENT END// ========================= -->
+<!-- ========================= SECTION CONTENT 2 END// ========================= -->
 
-<!-- ========================= SECTION FEATURES ========================= -->
+<!-- ========================= SECTION CONTENT 3 ========================= -->
 <section id="features" class="section-features padding-y-lg  section-3">
 	<div class="container">
 	<div class="row align-items-center">
@@ -508,9 +710,9 @@ $(document).ready(function() {
 	</div>
 	</div><!-- container // -->
 </section>
-<!-- ========================= SECTION FEATURES END// ========================= -->
+<!-- ========================= SECTION CONTENT 3 END// ========================= -->
 
-<!-- ========================= SECTION CONTENT  ========================= -->
+<!-- ========================= SECTION CONTENT 4 ========================= -->
 <section id="content" class="section-content padding-y-lg section-4">
 	<div class="container">
 		<div class="row">
@@ -563,12 +765,11 @@ $(document).ready(function() {
 		</div>
 	</div> <!-- container .//  -->
 </section>
-<!-- ========================= SECTION CONTENT  END// ========================= -->
+<!-- ========================= SECTION CONTENT 4 END// ========================= -->
 
 
-
-<!-- ========================= SECTION CONTENT ASIDE ========================= -->
-<section id="map" class="bg section-content" style=" height: 542px;
+<!-- ========================= SECTION CONTENT 5 ========================= -->
+<section id="map" class="bg section-content section-5";
   object-fit: contain;">
 	<img src="images/banners/map.png"
      srcset="images/banners/map@2x.png 2x,
@@ -576,20 +777,21 @@ $(document).ready(function() {
      class="Captura-de-Pantalla-2019-05-03-a-las-170845">
     <!-- container .//  -->
 </section>
-<!-- ========================= SECTION CONTENT ASIDE END// ========================= -->
+<!-- ========================= SECTION CONTENT 5 END// ========================= -->
 
 
 <!-- ========================= FOOTER ========================= -->
 <footer class="section-footer">
-	<div class="container-fluid">
+	<div class="container">
 		<section class="footer-top padding-top container">
-			<div class="row ">
-				 <div class=" footer-up float-right">
+			<div class="row">
+				 <div class=" footer-up  float-right">
 					<a href="#" class=""> <i class="fab fa-linkedin-in"></i> </a>
 			        <a href="#" class=""> <i class="fab fa-facebook-f"></i> </a>
 					<a href="#" class=""> <i class="fab fa-instagram"></i> </a>
 				</div>
 			</div>
+			<br>
 			<div class="row">
 				<aside class="col-sm-3 col-md-3 white">
 					<h5 class="title"></h5>
@@ -644,6 +846,34 @@ $(document).ready(function() {
 </footer>
 <!-- ========================= FOOTER END // ========================= -->
 
+
+<script>
+	var zeynep = $('.zeynep').zeynep({
+    onClosed: function () {
+      // enable main wrapper element clicks on any its children element
+      $("body main").attr("style", "");
+
+      console.log('the <a href="https://www.jqueryscript.net/tags.php?/side menu/">side menu</a> is closed.');
+    },
+    onOpened: function () {
+      // disable main wrapper element clicks on any its children element
+      $("body main").attr("style", "pointer-events: none;");
+
+      console.log('the side menu is opened.');
+    }
+});
+	$(".zeynep-overlay").click(function () {
+  zeynep.close();
+});
+
+	$("nav .navbar-toggler").click(function () {
+  if ($("html").hasClass("zeynep-opened")) {
+    zeynep.close();
+  } else {
+    zeynep.open();
+  }
+});
+</script>
 <script>
 	$(document).ready(function() {
  // executes when HTML-Document is loaded and DOM is ready
