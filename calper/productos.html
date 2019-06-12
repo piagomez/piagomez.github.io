@@ -443,316 +443,310 @@ $(document).ready(function() {
 <div class="zeynep-overlay"></div>
 
 <!-- ========================= SECTION INTRO ========================= -->
-<section id="intro" class="section-intro ">
-	<div class="owl-init slider-main owl-carousel" data-items="1" data-nav="true" data-dots="false">
-		<div class="item-slide">
-			<img src="#">
-		</div>
-		<div class="item-slide">
-			<img src="#">
-		</div>
-		<div class="item-slide">
-			<img src="#">
+<section id="intro" class="section-intro">
+	<div class=" header-categ_prod d-none d-lg-block">
+		<div class="container-fluid">
+			<div class="content col-sm-6">
+				<h1 class="title">TODOS LOS MODELOS</h1>
+			</div>
+			<div class="bg-design_header"></div>
 		</div>
 	</div>
-	<aside class="col-sm-12 text-center center">
-	<div class="slick-slider" data-slick='{"slidesToShow": 3, "slidesToScroll": 3, "responsive": [{"breakpoint": 1024,"settings": {"slidesToShow": 3,"slidesToScroll": 3,"infinite": true,"dots": true}},{"breakpoint": 600,"settings": {"slidesToShow": 1,"slidesToScroll": 1}},{"breakpoint": 480,"settings": {"slidesToShow": 1,"slidesToScroll": 1}]}'>
-		<div class="item-slide ">
-			 <div class="card-banner">
-			  <div class="card-body white">
-			    <h3 class="card-title">Primary text as title</h3>
-			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			  </div>
-			</div> <!-- card.// -->
-		</div>
-		<div class="item-slide ">
-			 <div class="card-banner">
-			  <div class="card-body white">
-			    <h3 class="card-title">Primary text as title</h3>
-			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			  </div>
-			</div> <!-- card.// -->
-		</div>
-		<div class="item-slide ">
-			 <div class="card-banner">
-			  <div class="card-body white">
-			    <h3 class="card-title">Primary text as title</h3>
-			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			  </div>
-			</div> <!-- card.// -->
-		</div>
-		<div class="item-slide ">
-			 <div class="card-banner">
-			  <div class="card-body white">
-			    <h3 class="card-title">Primary text as title</h3>
-			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			  </div>
-			</div> <!-- card.// -->
+	<div class=" header-categ_prod mobile d-block d-lg-none">
+		<div class="container-fluid">
+				<h1 class="title">TODOS LOS MODELOS</h1>
 		</div>
 	</div>
-	<!-- ============== slick slide items .end // ============= -->
-	</aside>
+
 </section>
 <!-- ========================= SECTION INTRO END// ========================= -->
 
 
-<!-- ========================= SECTION CONTENT 1 // ========================= -->
-<section class="section-content padding-y-lg bg-imgage-1 section-1">
-	<div class="container-fluid">
+<!-- ========================= SECTION PRODUCTS // ========================= -->
+<section class="section-content padding-y-lg section-prod">
+	<div class="container">
 		<div class="row">
-			<aside class="col-sm-4">
-				<img src="images/banners/original-footwear-women.png"
-			     srcset="images/banners/original-footwear-women@2x.png 2x,
-			             images/banners/original-footwear-women@3x.png 3x"
-			     class="float-left ORIGINAL-FOOTWEAR-WOMEN">
+			<aside class="col-sm-3 filters">
+				<div class="card card-filter">
+					<article class="card-group-item">
+						<header class="card-header">
+							<a class="" aria-expanded="true" href="#" data-toggle="collapse" data-target="#collapse22">
+								<i class="icon-action fa fa-chevron-down"></i>
+								<h6 class="title">By Category</h6>
+							</a>
+						</header>
+						<div style="" class="filter-content collapse show" id="collapse22">
+							<div class="card-body">
+								<form class="pb-3">
+								<div class="input-group">
+								  <input class="form-control" placeholder="Search" type="text">
+								  <div class="input-group-append">
+								    <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+								  </div>
+								</div>
+								</form>
+
+								<ul class="list-unstyled list-lg">
+									<li><a href="#">Cras justo odio <span class="float-right badge badge-light round">142</span> </a></li>
+									<li><a href="#">Dapibus ac facilisis  <span class="float-right badge badge-light round">3</span>  </a></li>
+									<li><a href="#">Morbi leo risus <span class="float-right badge badge-light round">32</span>  </a></li>
+									<li><a href="#">Another item <span class="float-right badge badge-light round">12</span>  </a></li>
+								</ul>  
+							</div> <!-- card-body.// -->
+						</div> <!-- collapse .// -->
+					</article> <!-- card-group-item.// -->
+					<article class="card-group-item">
+						<header class="card-header">
+							<a href="#" data-toggle="collapse" data-target="#collapse33">
+								<i class="icon-action fa fa-chevron-down"></i>
+								<h6 class="title">By Price  </h6>
+							</a>
+						</header>
+						<div class="filter-content collapse show" id="collapse33">
+							<div class="card-body">
+								<input type="range" class="custom-range" min="0" max="100" name="">
+								<div class="form-row">
+								<div class="form-group col-md-6">
+								  <label>Min</label>
+								  <input class="form-control" placeholder="$0" type="number">
+								</div>
+								<div class="form-group text-right col-md-6">
+								  <label>Max</label>
+								  <input class="form-control" placeholder="$1,0000" type="number">
+								</div>
+								</div> <!-- form-row.// -->
+								<button class="btn btn-block btn-outline-primary">Apply</button>
+							</div> <!-- card-body.// -->
+						</div> <!-- collapse .// -->
+					</article> <!-- card-group-item.// -->
+					<article class="card-group-item">
+						<header class="card-header">
+							<a href="#" data-toggle="collapse" data-target="#collapse44">
+								<i class="icon-action fa fa-chevron-down"></i>
+								<h6 class="title">By Feature </h6>
+							</a>
+						</header>
+						<div class="filter-content collapse show" id="collapse44">
+							<div class="card-body">
+							<form>
+								<label class="form-check">
+								  <input class="form-check-input" value="" type="checkbox">
+								  <span class="form-check-label">
+								  	<span class="float-right badge badge-light round">5</span>
+								    Samsung
+								  </span>
+								</label>  <!-- form-check.// -->
+								<label class="form-check">
+								  <input class="form-check-input" value="" type="checkbox">
+								  <span class="form-check-label">
+								  	<span class="float-right badge badge-light round">13</span>
+								    Mersedes Benz
+								  </span>
+								</label> <!-- form-check.// -->
+								<label class="form-check">
+								  <input class="form-check-input" value="" type="checkbox">
+								  <span class="form-check-label">
+								  	<span class="float-right badge badge-light round">12</span>
+								    Nissan Altima
+								  </span>
+								</label>  <!-- form-check.// -->
+								<label class="form-check">
+								  <input class="form-check-input" value="" type="checkbox">
+								  <span class="form-check-label">
+								  	<span class="float-right badge badge-light round">32</span>
+								    Another Brand
+								  </span>
+								</label>  <!-- form-check.// -->
+							</form>
+							</div> <!-- card-body.// -->
+						</div> <!-- collapse .// -->
+					</article> <!-- card-group-item.// -->
+				</div> <!-- card.// -->
 		 	</aside>
-			<article class=" col-sm-7">
-				<header class="section-heading">
-					<h2>El equilibrio perfecto entre seguridad y comodidad para tu trabajo</h2>
-				</header><!-- sect-heading -->
-				<p>Camina tranquilo con un calzado resistente, con la mejor tecnología, asociada a los materiales de vanguardia utilizados en su confección, y sin descuidar el confort que tu pie necesita. <b> Las horas de pie, largos trayectos y jornadas laborales extensas</b> ya no son un problema con tu Calper Footwear. Cuidate en todo momento sin descuidar la comodidad, enfréntate tranquilo a los más diversos y exigentes rubros laborales de hoy.</p>
-				<br><br>
+
+
+			<article class=" col-sm-9 grid-products">
+				<div class="row-sm">
+					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+						<figure class="card card-product">
+							<div class="img-wrap"><img src="images/items/starfish-white.png"
+					     srcset="images/items/starfish-white@2x.png 2x,
+					             images/items/starfish-white@3x.png 3x"
+					     class="STARFISH-WHITE">
+					 </div>
+							<figcaption class="info-wrap">
+								<a href="#" class="title">Good item name</a>
+								<div class="price-wrap">
+									<span class="price-new">$1280</span>
+									<del class="price-old">$1980</del>
+								</div> <!-- price-wrap.// -->
+							</figcaption>
+						</figure> <!-- card // -->
+					</div> <!-- col // -->
+					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+						<figure class="card card-product">
+							<div class="img-wrap"> <img src="images/items/starfish-white.png"
+					     srcset="images/items/starfish-white@2x.png 2x,
+					             images/items/starfish-white@3x.png 3x"
+					     class="STARFISH-WHITE"></div>
+							<figcaption class="info-wrap">
+								<a href="#" class="title">The name of product</a>
+								<div class="price-wrap">
+									<span class="price-new">$280</span>
+								</div> <!-- price-wrap.// -->
+							</figcaption>
+						</figure> <!-- card // -->
+					</div> <!-- col // -->
+					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+						<figure class="card card-product">
+							<div class="img-wrap"> <img src="images/items/starfish-white.png"
+					     srcset="images/items/starfish-white@2x.png 2x,
+					             images/items/starfish-white@3x.png 3x"
+					     class="STARFISH-WHITE"></div>
+							<figcaption class="info-wrap">
+								<a href="#" class="title">Good item name</a>
+								<div class="price-wrap">
+									<span class="price-new">$280</span>
+								</div> <!-- price-wrap.// -->
+							</figcaption>
+						</figure> <!-- card // -->
+					</div> <!-- col // -->
+					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+						<figure class="card card-product">
+							<div class="img-wrap"><img src="images/items/starfish-white.png"
+					     srcset="images/items/starfish-white@2x.png 2x,
+					             images/items/starfish-white@3x.png 3x"
+					     class="STARFISH-WHITE"></div>
+							<figcaption class="info-wrap">
+								<a href="#" class="title">Good item name</a>
+								<div class="price-wrap">
+									<span class="price-new">$280</span>
+								</div> <!-- price-wrap.// -->
+							</figcaption>
+						</figure> <!-- card // -->
+					</div> <!-- col // -->
+					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+						<figure class="card card-product">
+							<div class="img-wrap"><img src="images/items/starfish-white.png"
+					     srcset="images/items/starfish-white@2x.png 2x,
+					             images/items/starfish-white@3x.png 3x"
+					     class="STARFISH-WHITE"></div>
+							<figcaption class="info-wrap">
+								<a href="#" class="title">Good item name</a>
+								<div class="price-wrap">
+									<span class="price-new">$1280</span>
+									<del class="price-old">$1980</del>
+								</div> <!-- price-wrap.// -->
+							</figcaption>
+						</figure> <!-- card // -->
+					</div> <!-- col // -->
+					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+						<figure class="card card-product">
+							<div class="img-wrap"><img src="images/items/starfish-white.png"
+					     srcset="images/items/starfish-white@2x.png 2x,
+					             images/items/starfish-white@3x.png 3x"
+					     class="STARFISH-WHITE"></div>
+							<figcaption class="info-wrap">
+								<a href="#" class="title">The name of product</a>
+								<div class="price-wrap">
+									<span class="price-new">$280</span>
+								</div> <!-- price-wrap.// -->
+							</figcaption>
+						</figure> <!-- card // -->
+					</div> <!-- col // -->
+					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+						<figure class="card card-product">
+							<div class="img-wrap"><img src="images/items/starfish-white.png"
+					     srcset="images/items/starfish-white@2x.png 2x,
+					             images/items/starfish-white@3x.png 3x"
+					     class="STARFISH-WHITE"></div>
+							<figcaption class="info-wrap">
+								<a href="#" class="title">The name of product</a>
+								<div class="price-wrap">
+									<span class="price-new">$280</span>
+								</div> <!-- price-wrap.// -->
+							</figcaption>
+						</figure> <!-- card // -->
+					</div> <!-- col // -->
+					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+						<figure class="card card-product">
+							<div class="img-wrap"><img src="images/items/starfish-white.png"
+					     srcset="images/items/starfish-white@2x.png 2x,
+					             images/items/starfish-white@3x.png 3x"
+					     class="STARFISH-WHITE">
+					 </div>
+							<figcaption class="info-wrap">
+								<a href="#" class="title">The name of product</a>
+								<div class="price-wrap">
+									<span class="price-new">$280</span>
+								</div> <!-- price-wrap.// -->
+							</figcaption>
+						</figure> <!-- card // -->
+					</div> <!-- col // -->
+					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+						<figure class="card card-product">
+							<div class="img-wrap"> <img src="images/items/starfish-white.png"
+					     srcset="images/items/starfish-white@2x.png 2x,
+					             images/items/starfish-white@3x.png 3x"
+					     class="STARFISH-WHITE"></div>
+							<figcaption class="info-wrap">
+								<a href="#" class="title">The name of product</a>
+								<div class="price-wrap">
+									<span class="price-new">$1280</span>
+									<del class="price-old">$1980</del>
+								</div> <!-- price-wrap.// -->
+							</figcaption>
+						</figure> <!-- card // -->
+					</div> <!-- col // -->
+					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+						<figure class="card card-product">
+							<div class="img-wrap"> <img src="images/items/starfish-white.png"
+					     srcset="images/items/starfish-white@2x.png 2x,
+					             images/items/starfish-white@3x.png 3x"
+					     class="STARFISH-WHITE"></div>
+							<figcaption class="info-wrap">
+								<a href="#" class="title">The name of product</a>
+								<div class="price-wrap">
+									<span class="price-new">$280</span>
+								</div> <!-- price-wrap.// -->
+							</figcaption>
+						</figure> <!-- card // -->
+					</div> <!-- col // -->
+					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+						<figure class="card card-product">
+							<div class="img-wrap"><img src="images/items/starfish-white.png"
+					     srcset="images/items/starfish-white@2x.png 2x,
+					             images/items/starfish-white@3x.png 3x"
+					     class="STARFISH-WHITE"></div>
+							<figcaption class="info-wrap">
+								<a href="#" class="title">The name of product</a>
+								<div class="price-wrap">
+									<span class="price-new">$280</span>
+								</div> <!-- price-wrap.// -->
+							</figcaption>
+						</figure> <!-- card // -->
+					</div> <!-- col // -->
+					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+						<figure class="card card-product">
+							<div class="img-wrap"><img src="images/items/starfish-white.png"
+					     srcset="images/items/starfish-white@2x.png 2x,
+					             images/items/starfish-white@3x.png 3x"
+					     class="STARFISH-WHITE"></div>
+							<figcaption class="info-wrap">
+								<a href="#" class="title">The name of product</a>
+								<div class="price-wrap">
+									<span class="price-new">$280</span>
+								</div> <!-- price-wrap.// -->
+							</figcaption>
+						</figure> <!-- card // -->
+					</div> <!-- col // -->
+					</div> <!-- row.// -->
+
 			</article>
 		</div>
 	</div> <!-- container .//  -->
 </section>
 <!-- ========================= SECTION CONTENT 1 END// ========================= -->
-
-<!-- ========================= SECTION CONTENT 2 // ========================= -->
-<section class="section-content padding-y-lg bg-image-2 section-2">
-	<div class="container-fluid">
-		<div class="row align-items-center">
-			<div class="col-md-5 section-2_image-1">
-				<img src="#" alt="" class="section-2_image-1">
-			</div>
-			<div class="col-md-7 padding-y-lg text-center">
-				<article>
-					<header class="section-heading">
-						<h2 class="text-center">CALZADO MUJER</h2>
-					</header><!-- sect-heading -->
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscid
-						tempor incididunt ut labore et dolgna aliqua.Ut en</p><br>
-					<a href="#" class="btn btn-outline-primary">Ver más</a>
-					<br>
-				</article>
-			</div>
-		</div>
-		<div class="row hr-image">
-			<img src="images/banners/starfish-wht-perfil.png"
-			     srcset="images/banners/starfish-wht-perfil@2x.png 2x,
-			             images/banners/starfish-wht-perfil@3x.png 3x"
-			     class="section-2_image-3 STARFISH-WHT-PERFIL">
-		</div>
-		<div class="row  align-items-center">
-			<div class="col-md-7 padding-y-lg text-center">
-				<article>
-					<header class="section-heading">
-						<h2 class="text-center">CALZADO HOMBRE</h2>
-					</header><!-- sect-heading -->
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscid
-						tempor incididunt ut labore et dolgna aliqua.Ut en</p><br>
-					<a href="#" class="btn btn-outline-primary">Ver más</a>
-					<br>
-				</article>
-			</div>
-			<div class="col-md-5 section-2_image-2">
-				<img src="#" alt="" class="section-2_image-2">
-			</div>
-		</div>
-		<div class="row hr-image">
-			<img src="images/banners/raptor-plus-black-perfil.png"
-			     srcset="images/banners/raptor-plus-black-perfil@2x.png 2x,
-			             images/banners/raptor-plus-black-perfil@3x.png 3x"
-			     class="section-2_image-4 STARFISH-BLACK-PERFIL">
-		</div>
-		<div class="row list-figures padding-y-lg text-center">
-			<div class="col col-md-4">
-				<div class="item-figure">
-					<div class="fig figure-1"></div><!-- 
-			<img src="images/banners/w-831-starfish-black.png"
-			     srcset="images/banners/w-831-starfish-black@2x.png 2x,
-			             images/banners/w-831-starfish-black@3x.png 3x"
-			     class="section-figure-1 W831-STARFISH-BLACK"> -->
-						<h4>STARFISH / W831</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisci</p>
-					</div>
-				</div>
-				<div class="col col-md-4">
-					<div class="item-figure">
-						
-						<div class="fig figure-2"></div><!-- 
-			<img src="images/banners/m-941-nav-tomcat-sport.png"
-			     srcset="images/banners/m-941-nav-tomcat-sport@2x.png 2x,
-			             images/banners/m-941-nav-tomcat-sport@3x.png 3x"
-			     class="section-2_figure-2 M941-NAV-TOMCAT-SPORT"> -->
-						<h4>TOMCAT SPORT / M941</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisci</p>
-					</div>
-				</div>
-				<div class="col col-md-4">
-					<div class="item-figure">
-						
-						<div class="fig figure-3"></div><!-- 
-			<img src="images/banners/butterfly-white.png"
-			     srcset="images/banners/butterfly-white@2x.png 2x,
-			             images/banners/butterfly-white@3x.png 3x"
-			     class="section-2_figure-3 BUTTERFLY-WHITE"> -->
-						<h4>BUTTERFLY / W631</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisci</p>
-					</div>
-				</div>
-		</div>
-
-	</div> <!-- container .//  -->
-</section>
-<!-- ========================= SECTION CONTENT 2 END// ========================= -->
-
-<!-- ========================= SECTION CONTENT 3 ========================= -->
-<section id="features" class="section-features padding-y-lg  section-3">
-	<div class="container">
-	<div class="row align-items-center">
-		<div class="col-md-2">
-			<ul class="list-items-products center text-center">
-				<li><img alt="" src="images/banners/cgsr_2.png"
-			     srcset="images/banners/cgsr_2@2x.png 2x,
-			             images/banners/cgsr_2@3x.png 3x"
-			     class="section-3_image-1 CGSR active" ></li>
-				<li><img alt="" src="images/banners/pf.png"
-			     srcset="images/banners/pf@2x.png 2x,
-			             images/banners/pf@3x.png 3x"
-			     class="section-3_image-2 PF" ></li>
-				<li><img alt="" src="images/banners/scr.png"
-			     srcset="images/banners/scr@2x.png 2x,
-			             images/banners/scr@3x.png 3x"
-			     class="section-3_image-3 SCR" ></li>
-				<li><img alt="" src="images/banners/htet.png"
-			     srcset="images/banners/htet@2x.png 2x,
-			             images/banners/htet@3x.png 3x"
-			     class="section-3_image-4 HTET" ></li>
-				<li><img alt="" src="images/banners/cmlt.png"
-			     srcset="images/banners/cmlt@2x.png 2x,
-			             images/banners/cmlt@3x.png 3x"
-			     class="section-3_image-5 CMLT" ></li>
-				<li><img alt="" src="images/banners/cmut.png"
-			     srcset="images/banners/cmut@2x.png 2x,
-			             images/banners/cmut@3x.png 3x"
-			     class="section-3_image-6 CMUT" ></li>
-				<li><img alt="" src="images/banners/st.png"
-			     srcset="images/banners/st@2x.png 2x,
-			             images/banners/st@3x.png 3x"
-			     class="section-3_image-7 ST" ></li>
-				<li><img alt="" src="images/banners/cl.png"
-			     srcset="images/banners/cl@2x.png 2x,
-			             images/banners/cl@3x.png 3x"
-			     class="section-3_image-8 CL" ></li>
-				<li><img alt="" src="images/banners/h.png"
-			     srcset="images/banners/h@2x.png 2x,
-			             images/banners/h@3x.png 3x"
-			     class="section-3_image-9 H" ></li>
-				<li><img alt="" src="images/banners/pu.png"
-			     srcset="images/banners/pu@2x.png 2x,
-			             images/banners/pu@3x.png 3x"
-			     class="section-3_image-10 PU" ></li>
-				<li><img alt="" src="images/banners/nc.png"
-			     srcset="images/banners/nc@2x.png 2x,
-			             images/banners/nc@3x.png 3x"
-			     class="section-3_image-11 NC" ></li>
-			</ul>
-		</div>
-		<div class="col-md-5 center text-center">
-			<img src="images/banners/raptor-sport-black-planta.png"
-			     srcset="images/banners/raptor-sport-black-planta@2x.png 2x,
-			             images/banners/raptor-sport-black-planta@3x.png 3x"
-			     class="figure-product RAPTOR-SPORT-BLACK-PLANTA">
-		</div>
-		<div class="col-md-5">
-			<article>
-				<header class="figure-item">
-					<img alt="" src="images/banners/cgsr.png"
-			     srcset="images/banners/cgsr@2x.png 2x,
-			             images/banners/cgsr@3x.png 3x"
-			     class="section-3_image-1 CGSR active" >
-				</header><!-- sect-heading -->
-				<p>Desarrollada para las más diversas superficies de trabajo.
-					Entrega propiedades antideslizantes y de gran resistencia,
-					además de un alto coeficiente de roce en pisos, estén secos
-					o húmedos con distintos agentes. </p><br>
-
-					<p class="caption">INTERNATIONAL STANDARD ATSM 1677-05</p>
-				<br>
-			</article>
-		</div>
-	</div>
-	</div><!-- container // -->
-</section>
-<!-- ========================= SECTION CONTENT 3 END// ========================= -->
-
-<!-- ========================= SECTION CONTENT 4 ========================= -->
-<section id="content" class="section-content padding-y-lg section-4">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-7 section-4-cards">
-				<div class="row section-4-card">
-					<div class="col-md-6 section-4-card-image">
-						<img src="images/banners/stock-photo-woman-tying-up-lace-on-sport-shoes-top-view-unrecognizable-woman-preparing-for-training-wearing-675448516-2.png"
-					     srcset="images/banners/stock-photo-woman-tying-up-lace-on-sport-shoes-top-view-unrecognizable-woman-preparing-for-training-wearing-675448516-2@2x.png 2x,
-					             images/banners/stock-photo-woman-tying-up-lace-on-sport-shoes-top-view-unrecognizable-woman-preparing-for-training-wearing-675448516-2@3x.png 3x"
-					     class="stock-photo-woman-tying-up-lace-on-sport-shoes-top-view-unrecognizable-woman-preparing-for-training-wearing-675448516-2">
-					</div>
-					<div class="col-md-6 section-4-content">
-						<div class="caption">02.06.2019</div>
-						<hr>
-						<h6>SOBRE CALPER FOOTWEAR
-							AND WORK COLLECTION</h6>
-						<p>Lorem ipsum dolor sit ametirt Lorem ipsum dolor sit ametirtLorem ipsum dolor… <a href="#">LEER MÁS</a></p>
-					</div>
-				</div>
-				<div class="row section-4-card">
-					<div class="col-md-6 section-4-card-image">
-						<img src="images/banners/stock-photo-woman-tying-up-lace-on-sport-shoes-top-view-unrecognizable-woman-preparing-for-training-wearing-675448516-2.png"
-					     srcset="images/banners/stock-photo-woman-tying-up-lace-on-sport-shoes-top-view-unrecognizable-woman-preparing-for-training-wearing-675448516-2@2x.png 2x,
-					             images/banners/stock-photo-woman-tying-up-lace-on-sport-shoes-top-view-unrecognizable-woman-preparing-for-training-wearing-675448516-2@3x.png 3x"
-					     class="stock-photo-woman-tying-up-lace-on-sport-shoes-top-view-unrecognizable-woman-preparing-for-training-wearing-675448516-2">
-					</div>
-					<div class="col-md-6 section-4-content">
-						<div class="caption">02.06.2019</div>
-						<hr>
-						<h6>SOBRE CALPER FOOTWEAR
-							AND WORK COLLECTION</h6>
-						<p>Lorem ipsum dolor sit ametirt Lorem ipsum dolor sit ametirtLorem ipsum dolor… <a href="#">LEER MÁS</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 section-4-card-y">
-					<img src="images/banners/stock-photo-athletes-foot-close-up-healthy-lifestyle-and-sport-concepts-429639724-2.png"
-					     srcset="images/banners/stock-photo-athletes-foot-close-up-healthy-lifestyle-and-sport-concepts-429639724-2@2x.png 2x,
-					             images/banners/stock-photo-athletes-foot-close-up-healthy-lifestyle-and-sport-concepts-429639724-2@3x.png 3x"
-					     class="stock-photo-athletes-foot-close-up-healthy-lifestyle-and-sport-concepts-429639724-2">
-					     
-					<div class="section-4-content">
-						<div class="caption">02.06.2019</div>
-						<hr>
-						<h3>SOBRE CALPER FOOTWEAR
-	AND WORK COLLECTION</h3>
-						<p>Lorem ipsum dolor sit ametirt Lorem ipsum dolor sit ametirtLorem ipsum dolor… <a href="#">LEER MÁS</a></p>						
-					</div>
-			</div>
-		</div>
-	</div> <!-- container .//  -->
-</section>
-<!-- ========================= SECTION CONTENT 4 END// ========================= -->
-
-
-<!-- ========================= SECTION CONTENT 5 ========================= -->
-<section id="map" class="bg section-content section-5";
-  object-fit: contain;">
-	<img src="images/banners/map.png"
-     srcset="images/banners/map@2x.png 2x,
-             images/banners/map@3x.png 3x"
-     class="Captura-de-Pantalla-2019-05-03-a-las-170845">
-    <!-- container .//  -->
-</section>
-<!-- ========================= SECTION CONTENT 5 END// ========================= -->
 
 
 <!-- ========================= FOOTER ========================= -->

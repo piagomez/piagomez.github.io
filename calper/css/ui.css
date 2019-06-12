@@ -2251,6 +2251,10 @@ ul.row, ul.row-sm {
     margin-left: 0px; }
 
 /*# sourceMappingURL=ui.css.map */
+
+
+
+
 button, button:focus{
     outline: none;
 }
@@ -2275,6 +2279,16 @@ a:hover{
   color: #3a5575;
 }
 
+h1{
+  font-size: 46px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 1.8px;
+  text-align: left;
+  color: #3a5575;
+}
 h2{
   font-size: 40px;
   font-weight: bold;
@@ -2449,6 +2463,9 @@ header, .nav-link{
   }
 }
 @media screen and (max-width: 991px){
+  .section-intro{
+    padding-top: 58px;
+  }
   header {
     height: 58px;
     position: fixed;
@@ -2856,3 +2873,73 @@ header, .nav-link{
   width: 100%;
 }
 /* ========== HOME END ==========*/
+
+
+/* ========== PRODUCTS ==============*/
+
+.section-intro .header-categ_prod{
+  background-image: url(../images/banners/RUBROS@3x.png);
+  background-size: contain;
+  background-position-x: right;
+}
+.section-intro .header-categ_prod.mobile{
+  background: #fff;
+    padding: 17px;
+}
+.section-intro .header-categ_prod.mobile h1{  
+  font-size: 19px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.42;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #3a5575;
+  padding: 12px;
+}
+.section-intro .header-categ_prod h1{
+  color: #fff;
+}
+.section-intro .header-categ_prod.mobile .container-fluid{
+    border-bottom: 2px solid #3a5575;
+}
+.section-intro .header-categ_prod .container-fluid{
+  display: flex;
+  padding: 0;
+}
+.section-intro .header-categ_prod .content{
+  background: #3a5575;
+  vertical-align: middle;
+  color: #fff;
+  height: 301px;
+    margin-top: -1px;
+  display: flex;
+}
+.section-intro .header-categ_prod .title{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+.section-intro .header-categ_prod .bg-design_header{
+    width: 0px;
+    margin-top: -1px;
+    margin-left: -1px;
+    display: inline-block;
+    border: 151px solid #3a5575;
+    border-right: transparent 50px solid;
+    border-bottom: transparent 150px solid;
+    border-left: #3a5575 50px solid;
+}
+.section-prod{
+  background: #fff;
+}
+.section-prod .card-product{
+  width: 217px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.section-prod .card-product .img-wrap{
+  height: 217px;
+}
+/* ========== PRODUCTS END ==========*/
