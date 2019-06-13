@@ -2364,7 +2364,19 @@ header, .nav-link{
   color: #ffffff !important;
 }
 
-/* ========== MEGA MENU ==========*/
+ /*========== FILTERS ==========*/
+.card .card-filter{
+  border: 0;
+ }
+.card-group-item {
+    border: 0;
+}
+.card-group-item .card-header {
+    background: none;
+}
+
+ /*========== FILTERS END ==========*/
+ /*========== MEGA MENU ==========*/
 
 .navbar-dark .navbar-toggler-icon{
   /* Insertar asset de menu */
@@ -2938,8 +2950,71 @@ header, .nav-link{
   width: 217px;
   margin: auto;
   margin-bottom: 2rem;
+  border: 0;
 }
-.section-prod .card-product .img-wrap{
-  height: 217px;
+.section-prod .card-product:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.section-prod .card-product .title{  
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.58;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+  align-self: flex-end;
+}
+.section-prod .card-product .description{    
+  font-size: 11px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+  text-align: left;
+  color: #707070;
+}
+.section-prod .card-product hr{   
+  margin: 2px auto;
+  height: 2px;
+}
+.section-prod .card-product .feautures-items{   
+  margin: 6.5px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 0;
+}
+.section-prod .card-product .feautures-items ul{
+  list-style-type: none;
+  margin: 0;
+  float: right;
+
+}
+.section-prod .card-product .feautures-items .item img{
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
+.section-prod .card-product .img-wrap{  
+  width: 217.6px;
+  height: 217.6px;
+  object-fit: contain;
+  border: solid 1px #7070704a;
+} 
+.section-prod .card-product .img-wrap .row{
+    padding-left: 15px;
+} 
+.section-prod .card-product .info-wrap{ 
+  padding: 0;
+}
+.section-prod .card-product .info-wrap .row{ 
+  height: 32px;
+  justify-content: space-between;
+  margin: 0;
 }
 /* ========== PRODUCTS END ==========*/

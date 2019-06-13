@@ -466,108 +466,221 @@ $(document).ready(function() {
 <section class="section-content padding-y-lg section-prod">
 	<div class="container">
 		<div class="row">
-			<aside class="col-sm-3 filters">
-				<div class="card card-filter">
-					<article class="card-group-item">
-						<header class="card-header">
-							<a class="" aria-expanded="true" href="#" data-toggle="collapse" data-target="#collapse22">
-								<i class="icon-action fa fa-chevron-down"></i>
-								<h6 class="title">By Category</h6>
-							</a>
-						</header>
-						<div style="" class="filter-content collapse show" id="collapse22">
-							<div class="card-body">
-								<form class="pb-3">
-								<div class="input-group">
-								  <input class="form-control" placeholder="Search" type="text">
-								  <div class="input-group-append">
-								    <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
-								  </div>
-								</div>
-								</form>
+			<a href="#" class="btn btn-outline-primary btn-lg d-lg-none dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FILTRAR POR</a>
+			<aside class="col-sm-3 b-none b-lg-block filters">
 
-								<ul class="list-unstyled list-lg">
-									<li><a href="#">Cras justo odio <span class="float-right badge badge-light round">142</span> </a></li>
-									<li><a href="#">Dapibus ac facilisis  <span class="float-right badge badge-light round">3</span>  </a></li>
-									<li><a href="#">Morbi leo risus <span class="float-right badge badge-light round">32</span>  </a></li>
-									<li><a href="#">Another item <span class="float-right badge badge-light round">12</span>  </a></li>
-								</ul>  
-							</div> <!-- card-body.// -->
-						</div> <!-- collapse .// -->
-					</article> <!-- card-group-item.// -->
-					<article class="card-group-item">
-						<header class="card-header">
-							<a href="#" data-toggle="collapse" data-target="#collapse33">
-								<i class="icon-action fa fa-chevron-down"></i>
-								<h6 class="title">By Price  </h6>
-							</a>
-						</header>
-						<div class="filter-content collapse show" id="collapse33">
-							<div class="card-body">
-								<input type="range" class="custom-range" min="0" max="100" name="">
-								<div class="form-row">
-								<div class="form-group col-md-6">
-								  <label>Min</label>
-								  <input class="form-control" placeholder="$0" type="number">
-								</div>
-								<div class="form-group text-right col-md-6">
-								  <label>Max</label>
-								  <input class="form-control" placeholder="$1,0000" type="number">
-								</div>
-								</div> <!-- form-row.// -->
-								<button class="btn btn-block btn-outline-primary">Apply</button>
-							</div> <!-- card-body.// -->
-						</div> <!-- collapse .// -->
-					</article> <!-- card-group-item.// -->
-					<article class="card-group-item">
-						<header class="card-header">
-							<a href="#" data-toggle="collapse" data-target="#collapse44">
-								<i class="icon-action fa fa-chevron-down"></i>
-								<h6 class="title">By Feature </h6>
-							</a>
-						</header>
-						<div class="filter-content collapse show" id="collapse44">
-							<div class="card-body">
+			<a href="#" class="btn btn-outline-primary btn-lg d-lg-none dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TODOS</a>
+			<a href="#" class="btn btn-outline-primary btn-lg d-lg-none dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MUJER</a>
+			<a href="#" class="btn btn-outline-primary btn-lg d-lg-none dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">HOMBRES</a>
+
+
+
+			<div class="card card-filter">
+			<h3>FILTROS</h3>
+				<article class="card-group-item">
+					<header class="card-header">
+						<a class="" aria-expanded="true" href="#" data-toggle="collapse" data-target="#collapse22">
+							<i class="icon-action fa fa-chevron-down"></i>
+							<h6 class="title">CARACTERÍSTICAS</h6>
+						</a>
+					</header>
+					<div style="" class="filter-content collapse show" id="collapse22">
+						<div class="card-body">
 							<form>
 								<label class="form-check">
 								  <input class="form-check-input" value="" type="checkbox">
 								  <span class="form-check-label">
-								  	<span class="float-right badge badge-light round">5</span>
-								    Samsung
+								    Antideslizante
 								  </span>
 								</label>  <!-- form-check.// -->
 								<label class="form-check">
 								  <input class="form-check-input" value="" type="checkbox">
 								  <span class="form-check-label">
-								  	<span class="float-right badge badge-light round">13</span>
-								    Mersedes Benz
+								    Resistente a líquidos
 								  </span>
 								</label> <!-- form-check.// -->
 								<label class="form-check">
 								  <input class="form-check-input" value="" type="checkbox">
 								  <span class="form-check-label">
-								  	<span class="float-right badge badge-light round">12</span>
-								    Nissan Altima
+								    Livianos
 								  </span>
 								</label>  <!-- form-check.// -->
 								<label class="form-check">
 								  <input class="form-check-input" value="" type="checkbox">
 								  <span class="form-check-label">
-								  	<span class="float-right badge badge-light round">32</span>
-								    Another Brand
+								    Ergonómicos
+								  </span>
+								</label>  <!-- form-check.// -->
+								<label class="form-check">
+								  <input class="form-check-input" value="" type="checkbox">
+								  <span class="form-check-label">
+								    Fácil de limpiar
+								  </span>
+								</label>  <!-- form-check.// -->
+								<label class="form-check">
+								  <input class="form-check-input" value="" type="checkbox">
+								  <span class="form-check-label">
+								    Peligro Eléctrico
 								  </span>
 								</label>  <!-- form-check.// -->
 							</form>
-							</div> <!-- card-body.// -->
-						</div> <!-- collapse .// -->
-					</article> <!-- card-group-item.// -->
-				</div> <!-- card.// -->
+						</div> <!-- card-body.// -->
+					</div> <!-- collapse .// -->
+				</article> <!-- card-group-item.// -->
+				<hr>
+				<article class="card-group-item">
+					<header class="card-header">
+						<a href="#" data-toggle="collapse" data-target="#collapse33">
+							<i class="icon-action fa fa-chevron-down"></i>
+							<h6 class="title">CALZADOS</h6>
+						</a>
+					</header>
+					<div class="filter-content collapse show" id="collapse33">
+						<div class="card-body">
+							<form>
+								<label class="form-check">
+								  <input class="form-check-input" value="" type="checkbox">
+								  <span class="form-check-label">
+								    Todos Work
+								  </span>
+								</label>  <!-- form-check.// -->
+								<label class="form-check">
+								  <input class="form-check-input" value="" type="checkbox">
+								  <span class="form-check-label">
+								    Zapatillas Work
+								  </span>
+								</label> <!-- form-check.// -->
+								<label class="form-check">
+								  <input class="form-check-input" value="" type="checkbox">
+								  <span class="form-check-label">
+								    Zapatos Work
+								  </span>
+								</label>  <!-- form-check.// -->
+								<label class="form-check">
+								  <input class="form-check-input" value="" type="checkbox">
+								  <span class="form-check-label">
+								    Mocasines Work
+								  </span>
+								</label>  <!-- form-check.// -->
+								<label class="form-check">
+								  <input class="form-check-input" value="" type="checkbox">
+								  <span class="form-check-label">
+								    Zuecos Work
+								  </span>
+								</label>  <!-- form-check.// -->
+							</form>
+						</div> <!-- card-body.// -->
+					</div> <!-- collapse .// -->
+				</article> <!-- card-group-item.// -->
+				<hr>
+				<article class="card-group-item">
+					<header class="card-header">
+						<a href="#" data-toggle="collapse" data-target="#collapse44">
+							<i class="icon-action fa fa-chevron-down"></i>
+							<h6 class="title">COLOR</h6>
+						</a>
+					</header>
+					<div class="filter-content collapse show" id="collapse44">
+						<div class="card-body">
+						<form>
+							<label class="form-check">
+							  <input class="form-check-input" value="" type="checkbox">
+							  <span class="form-check-label">
+							  	<span class="elipse e-white"></span> <span class="item-list">White</span>
+							  </span>
+							</label>  <!-- form-check.// -->
+							<label class="form-check">
+							  <input class="form-check-input" value="" type="checkbox">
+							  <span class="form-check-label">
+							  	<span class="elipse e-black"></span> <span class="item-list">Black</span>
+							  </span>
+							</label> <!-- form-check.// -->
+							<label class="form-check">
+							  <input class="form-check-input" value="" type="checkbox">
+							  <span class="form-check-label">
+							  	<span class="elipse e-navy"></span> <span class="item-list">Navy</span>
+							  </span>
+							</label>  <!-- form-check.// -->
+							<label class="form-check">
+							  <input class="form-check-input" value="" type="checkbox">
+							  <span class="form-check-label">
+							  	<span class="elipse e-red"></span> <span class="item-list">Red</span>
+							  </span>
+							</label>  <!-- form-check.// -->
+							<label class="form-check">
+							  <input class="form-check-input" value="" type="checkbox">
+							  <span class="form-check-label">
+							  	<span class="elipse e-grape"></span> <span class="item-list">Grape</span>
+							  </span>
+							</label>  <!-- form-check.// -->
+							<label class="form-check">
+							  <input class="form-check-input" value="" type="checkbox">
+							  <span class="form-check-label">
+							  	<span class="elipse e-wine"></span> <span class="item-list">Wine</span>
+							  </span>
+							</label>  <!-- form-check.// -->
+							<label class="form-check">
+							  <input class="form-check-input" value="" type="checkbox">
+							  <span class="form-check-label">
+							  	<span class="elipse e-special"><span class="elipse e-special e-special-o"></span></span> <span class="item-list">Special</span>
+							  </span>
+							</label>  <!-- form-check.// -->
+						</form>
+						</div> <!-- card-body.// -->
+					</div> <!-- collapse .// -->
+				</article> <!-- card-group-item.// -->
+				<hr>
+				<article class="card-group-item">
+					<header class="card-header">
+						<a href="#" data-toggle="collapse" data-target="#collapse44">
+							<i class="icon-action fa fa-chevron-down"></i>
+							<h6 class="title">RUBRO</h6>
+						</a>
+					</header>
+					<div class="filter-content collapse show" id="collapse44">
+						<div class="card-body">
+						<form>
+							<label class="form-check">
+							  <input class="form-check-input" value="" type="checkbox">
+							  <span class="form-check-label">
+							    Salud
+							  </span>
+							</label>  <!-- form-check.// -->
+							<label class="form-check">
+							  <input class="form-check-input" value="" type="checkbox">
+							  <span class="form-check-label">
+							    Alimentación & Restaurantes
+							  </span>
+							</label> <!-- form-check.// -->
+							<label class="form-check">
+							  <input class="form-check-input" value="" type="checkbox">
+							  <span class="form-check-label">
+							    Hostelería
+							  </span>
+							</label>  <!-- form-check.// -->
+							<label class="form-check">
+							  <input class="form-check-input" value="" type="checkbox">
+							  <span class="form-check-label">
+							    Educación & Limpieza
+							  </span>
+							</label>  <!-- form-check.// -->
+							<label class="form-check">
+							  <input class="form-check-input" value="" type="checkbox">
+							  <span class="form-check-label">
+							    Industria & Otros
+							  </span>
+							</label>  <!-- form-check.// -->
+						</form>
+						</div> <!-- card-body.// -->
+					</div> <!-- collapse .// -->
+				</article> <!-- card-group-item.// -->
+			</div> <!-- card.// -->
 		 	</aside>
 
 
 			<article class=" col-sm-9 grid-products">
 				<div class="row-sm">
-					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 						<figure class="card card-product">
 							<div class="img-wrap"><img src="images/items/starfish-white.png"
 					     srcset="images/items/starfish-white@2x.png 2x,
@@ -575,100 +688,182 @@ $(document).ready(function() {
 					     class="STARFISH-WHITE">
 					 </div>
 							<figcaption class="info-wrap">
-								<a href="#" class="title">Good item name</a>
-								<div class="price-wrap">
-									<span class="price-new">$1280</span>
-									<del class="price-old">$1980</del>
-								</div> <!-- price-wrap.// -->
+								<div class="row">
+									<a href="#" class="title">White</a>
+									<div class="feautures-items">
+										<ul>
+											<li class="item">
+												<img src="images/icons/Grupo 1413.png" alt="">
+												<img src="images/icons/Grupo 1415.png" alt="">
+												<img src="images/icons/Grupo 1417.png" alt="">
+												<img src="images/icons/Grupo 1418.png" alt="">
+											</li>
+										</ul>
+									</div>
+								</div>
+								<hr>
+								<a href="#" class="title">STARFISH / W831</a>
+								<p class="description">Zapatilla ocupacional para mujer.</p>
 							</figcaption>
 						</figure> <!-- card // -->
 					</div> <!-- col // -->
-					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 						<figure class="card card-product">
 							<div class="img-wrap"> <img src="images/items/starfish-white.png"
 					     srcset="images/items/starfish-white@2x.png 2x,
 					             images/items/starfish-white@3x.png 3x"
 					     class="STARFISH-WHITE"></div>
 							<figcaption class="info-wrap">
-								<a href="#" class="title">The name of product</a>
-								<div class="price-wrap">
-									<span class="price-new">$280</span>
-								</div> <!-- price-wrap.// -->
+								<div class="row">
+									<a href="#" class="title">White</a>
+									<div class="feautures-items">
+										<ul>
+											<li class="item">
+												<img src="images/icons/Grupo 1413.png" alt="">
+												<img src="images/icons/Grupo 1415.png" alt="">
+												<img src="images/icons/Grupo 1417.png" alt="">
+												<img src="images/icons/Grupo 1418.png" alt="">
+											</li>
+										</ul>
+									</div>
+								</div>
+								<hr>
+								<a href="#" class="title">STARFISH / W831</a>
+								<p class="description">Zapatilla ocupacional para mujer.</p>
 							</figcaption>
 						</figure> <!-- card // -->
 					</div> <!-- col // -->
-					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 						<figure class="card card-product">
 							<div class="img-wrap"> <img src="images/items/starfish-white.png"
 					     srcset="images/items/starfish-white@2x.png 2x,
 					             images/items/starfish-white@3x.png 3x"
 					     class="STARFISH-WHITE"></div>
 							<figcaption class="info-wrap">
-								<a href="#" class="title">Good item name</a>
-								<div class="price-wrap">
-									<span class="price-new">$280</span>
-								</div> <!-- price-wrap.// -->
+								<div class="row">
+									<a href="#" class="title">White</a>
+									<div class="feautures-items">
+										<ul>
+											<li class="item">
+												<img src="images/icons/Grupo 1413.png" alt="">
+												<img src="images/icons/Grupo 1415.png" alt="">
+												<img src="images/icons/Grupo 1417.png" alt="">
+												<img src="images/icons/Grupo 1418.png" alt="">
+											</li>
+										</ul>
+									</div>
+								</div>
+								<hr>
+								<a href="#" class="title">STARFISH / W831</a>
+								<p class="description">Zapatilla ocupacional para mujer.</p>
 							</figcaption>
 						</figure> <!-- card // -->
 					</div> <!-- col // -->
-					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 						<figure class="card card-product">
 							<div class="img-wrap"><img src="images/items/starfish-white.png"
 					     srcset="images/items/starfish-white@2x.png 2x,
 					             images/items/starfish-white@3x.png 3x"
 					     class="STARFISH-WHITE"></div>
 							<figcaption class="info-wrap">
-								<a href="#" class="title">Good item name</a>
-								<div class="price-wrap">
-									<span class="price-new">$280</span>
-								</div> <!-- price-wrap.// -->
+								<div class="row">
+									<a href="#" class="title">White</a>
+									<div class="feautures-items">
+										<ul>
+											<li class="item">
+												<img src="images/icons/Grupo 1413.png" alt="">
+												<img src="images/icons/Grupo 1415.png" alt="">
+												<img src="images/icons/Grupo 1417.png" alt="">
+												<img src="images/icons/Grupo 1418.png" alt="">
+											</li>
+										</ul>
+									</div>
+								</div>
+								<hr>
+								<a href="#" class="title">STARFISH / W831</a>
+								<p class="description">Zapatilla ocupacional para mujer.</p>
 							</figcaption>
 						</figure> <!-- card // -->
 					</div> <!-- col // -->
-					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 						<figure class="card card-product">
 							<div class="img-wrap"><img src="images/items/starfish-white.png"
 					     srcset="images/items/starfish-white@2x.png 2x,
 					             images/items/starfish-white@3x.png 3x"
 					     class="STARFISH-WHITE"></div>
 							<figcaption class="info-wrap">
-								<a href="#" class="title">Good item name</a>
-								<div class="price-wrap">
-									<span class="price-new">$1280</span>
-									<del class="price-old">$1980</del>
-								</div> <!-- price-wrap.// -->
+								<div class="row">
+									<a href="#" class="title">White</a>
+									<div class="feautures-items">
+										<ul>
+											<li class="item">
+												<img src="images/icons/Grupo 1413.png" alt="">
+												<img src="images/icons/Grupo 1415.png" alt="">
+												<img src="images/icons/Grupo 1417.png" alt="">
+												<img src="images/icons/Grupo 1418.png" alt="">
+											</li>
+										</ul>
+									</div>
+								</div>
+								<hr>
+								<a href="#" class="title">STARFISH / W831</a>
+								<p class="description">Zapatilla ocupacional para mujer.</p>
 							</figcaption>
 						</figure> <!-- card // -->
 					</div> <!-- col // -->
-					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 						<figure class="card card-product">
 							<div class="img-wrap"><img src="images/items/starfish-white.png"
 					     srcset="images/items/starfish-white@2x.png 2x,
 					             images/items/starfish-white@3x.png 3x"
 					     class="STARFISH-WHITE"></div>
 							<figcaption class="info-wrap">
-								<a href="#" class="title">The name of product</a>
-								<div class="price-wrap">
-									<span class="price-new">$280</span>
-								</div> <!-- price-wrap.// -->
+								<div class="row">
+									<a href="#" class="title">White</a>
+									<div class="feautures-items">
+										<ul>
+											<li class="item">
+												<img src="images/icons/Grupo 1413.png" alt="">
+												<img src="images/icons/Grupo 1415.png" alt="">
+												<img src="images/icons/Grupo 1417.png" alt="">
+												<img src="images/icons/Grupo 1418.png" alt="">
+											</li>
+										</ul>
+									</div>
+								</div>
+								<hr>
+								<a href="#" class="title">STARFISH / W831</a>
+								<p class="description">Zapatilla ocupacional para mujer.</p>
 							</figcaption>
 						</figure> <!-- card // -->
 					</div> <!-- col // -->
-					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 						<figure class="card card-product">
 							<div class="img-wrap"><img src="images/items/starfish-white.png"
 					     srcset="images/items/starfish-white@2x.png 2x,
 					             images/items/starfish-white@3x.png 3x"
 					     class="STARFISH-WHITE"></div>
 							<figcaption class="info-wrap">
-								<a href="#" class="title">The name of product</a>
-								<div class="price-wrap">
-									<span class="price-new">$280</span>
-								</div> <!-- price-wrap.// -->
+								<div class="row">
+									<a href="#" class="title">White</a>
+									<div class="feautures-items">
+										<ul>
+											<li class="item">
+												<img src="images/icons/Grupo 1413.png" alt="">
+												<img src="images/icons/Grupo 1415.png" alt="">
+												<img src="images/icons/Grupo 1417.png" alt="">
+												<img src="images/icons/Grupo 1418.png" alt="">
+											</li>
+										</ul>
+									</div>
+								</div>
+								<hr>
+								<a href="#" class="title">STARFISH / W831</a>
+								<p class="description">Zapatilla ocupacional para mujer.</p>
 							</figcaption>
 						</figure> <!-- card // -->
 					</div> <!-- col // -->
-					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 						<figure class="card card-product">
 							<div class="img-wrap"><img src="images/items/starfish-white.png"
 					     srcset="images/items/starfish-white@2x.png 2x,
@@ -676,67 +871,126 @@ $(document).ready(function() {
 					     class="STARFISH-WHITE">
 					 </div>
 							<figcaption class="info-wrap">
-								<a href="#" class="title">The name of product</a>
-								<div class="price-wrap">
-									<span class="price-new">$280</span>
-								</div> <!-- price-wrap.// -->
+								<div class="row">
+									<a href="#" class="title">White</a>
+									<div class="feautures-items">
+										<ul>
+											<li class="item">
+												<img src="images/icons/Grupo 1413.png" alt="">
+												<img src="images/icons/Grupo 1415.png" alt="">
+												<img src="images/icons/Grupo 1417.png" alt="">
+												<img src="images/icons/Grupo 1418.png" alt="">
+											</li>
+										</ul>
+									</div>
+								</div>
+								<hr>
+								<a href="#" class="title">STARFISH / W831</a>
+								<p class="description">Zapatilla ocupacional para mujer.</p>
 							</figcaption>
 						</figure> <!-- card // -->
 					</div> <!-- col // -->
-					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 						<figure class="card card-product">
 							<div class="img-wrap"> <img src="images/items/starfish-white.png"
 					     srcset="images/items/starfish-white@2x.png 2x,
 					             images/items/starfish-white@3x.png 3x"
 					     class="STARFISH-WHITE"></div>
 							<figcaption class="info-wrap">
-								<a href="#" class="title">The name of product</a>
-								<div class="price-wrap">
-									<span class="price-new">$1280</span>
-									<del class="price-old">$1980</del>
-								</div> <!-- price-wrap.// -->
+								<div class="row">
+									<a href="#" class="title">White</a>
+									<div class="feautures-items">
+										<ul>
+											<li class="item">
+												<img src="images/icons/Grupo 1413.png" alt="">
+												<img src="images/icons/Grupo 1415.png" alt="">
+												<img src="images/icons/Grupo 1417.png" alt="">
+												<img src="images/icons/Grupo 1418.png" alt="">
+											</li>
+										</ul>
+									</div>
+								</div>
+								<hr>
+								<a href="#" class="title">STARFISH / W831</a>
+								<p class="description">Zapatilla ocupacional para mujer.</p>
 							</figcaption>
 						</figure> <!-- card // -->
 					</div> <!-- col // -->
-					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 						<figure class="card card-product">
 							<div class="img-wrap"> <img src="images/items/starfish-white.png"
 					     srcset="images/items/starfish-white@2x.png 2x,
 					             images/items/starfish-white@3x.png 3x"
 					     class="STARFISH-WHITE"></div>
 							<figcaption class="info-wrap">
-								<a href="#" class="title">The name of product</a>
-								<div class="price-wrap">
-									<span class="price-new">$280</span>
-								</div> <!-- price-wrap.// -->
+								<div class="row">
+									<a href="#" class="title">White</a>
+									<div class="feautures-items">
+										<ul>
+											<li class="item">
+												<img src="images/icons/Grupo 1413.png" alt="">
+												<img src="images/icons/Grupo 1415.png" alt="">
+												<img src="images/icons/Grupo 1417.png" alt="">
+												<img src="images/icons/Grupo 1418.png" alt="">
+											</li>
+										</ul>
+									</div>
+								</div>
+								<hr>
+								<a href="#" class="title">STARFISH / W831</a>
+								<p class="description">Zapatilla ocupacional para mujer.</p>
 							</figcaption>
 						</figure> <!-- card // -->
 					</div> <!-- col // -->
-					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 						<figure class="card card-product">
 							<div class="img-wrap"><img src="images/items/starfish-white.png"
 					     srcset="images/items/starfish-white@2x.png 2x,
 					             images/items/starfish-white@3x.png 3x"
 					     class="STARFISH-WHITE"></div>
 							<figcaption class="info-wrap">
-								<a href="#" class="title">The name of product</a>
-								<div class="price-wrap">
-									<span class="price-new">$280</span>
-								</div> <!-- price-wrap.// -->
+								<div class="row">
+									<a href="#" class="title">White</a>
+									<div class="feautures-items">
+										<ul>
+											<li class="item">
+												<img src="images/icons/Grupo 1413.png" alt="">
+												<img src="images/icons/Grupo 1415.png" alt="">
+												<img src="images/icons/Grupo 1417.png" alt="">
+												<img src="images/icons/Grupo 1418.png" alt="">
+											</li>
+										</ul>
+									</div>
+								</div>
+								<hr>
+								<a href="#" class="title">STARFISH / W831</a>
+								<p class="description">Zapatilla ocupacional para mujer.</p>
 							</figcaption>
 						</figure> <!-- card // -->
 					</div> <!-- col // -->
-					<div class="col-lg-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
 						<figure class="card card-product">
 							<div class="img-wrap"><img src="images/items/starfish-white.png"
 					     srcset="images/items/starfish-white@2x.png 2x,
 					             images/items/starfish-white@3x.png 3x"
 					     class="STARFISH-WHITE"></div>
 							<figcaption class="info-wrap">
-								<a href="#" class="title">The name of product</a>
-								<div class="price-wrap">
-									<span class="price-new">$280</span>
-								</div> <!-- price-wrap.// -->
+								<div class="row">
+									<a href="#" class="title">White</a>
+									<div class="feautures-items">
+										<ul>
+											<li class="item">
+												<img src="images/icons/Grupo 1413.png" alt="">
+												<img src="images/icons/Grupo 1415.png" alt="">
+												<img src="images/icons/Grupo 1417.png" alt="">
+												<img src="images/icons/Grupo 1418.png" alt="">
+											</li>
+										</ul>
+									</div>
+								</div>
+								<hr>
+								<a href="#" class="title">STARFISH / W831</a>
+								<p class="description">Zapatilla ocupacional para mujer.</p>
 							</figcaption>
 						</figure> <!-- card // -->
 					</div> <!-- col // -->
@@ -866,7 +1120,9 @@ $(window).resize(function(){
 	}	
 });  
   
-  
+  $('#ModalFilters').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
 
 // document ready  
 });
