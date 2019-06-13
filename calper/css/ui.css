@@ -2309,6 +2309,11 @@ h4{
   text-align: left;
   color: #3a5575;
 }
+.vermas{
+    z-index: 20;
+    position: absolute;
+    margin-left: -40px;
+}
 .btn{
   border-radius: 0; 
 }
@@ -2945,6 +2950,13 @@ header, .nav-link{
 }
 .section-prod{
   background: #fff;
+}
+.section-prod .btn-outline-primary{
+  width: 100%;
+  margin: 6px 0;
+}
+.section-prod .categ{
+  margin-bottom: 6px;
 }
 .section-prod .card-product{
   width: 217px;
