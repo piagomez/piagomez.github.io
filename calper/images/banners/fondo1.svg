@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1619" height="941" viewBox="0 0 1619 941">
+  <defs>
+    <clipPath id="clip-Mesa_de_trabajo_2">
+      <rect width="1619" height="941"/>
+    </clipPath>
+  </defs>
+  <g id="Mesa_de_trabajo_2" data-name="Mesa de trabajo – 2" clip-path="url(#clip-Mesa_de_trabajo_2)">
+    <rect width="1619" height="941" fill="#fff"/>
+    <g id="Grupo_1421" data-name="Grupo 1421" transform="translate(9.592 -3.413)">
+      <path id="Trazado_312" data-name="Trazado 312" d="M-124.128-1.146l1421.366.153L477.082,905.015l-601.408-561.1Z" transform="translate(113.827 -19.441)" fill="#eff4fa"/>
+      <path id="Trazado_313" data-name="Trazado 313" d="M637.383-1.042H855.439V1715.391L-203.818,906.256Z" transform="translate(763.565 -19.396)" fill="#eaf0f7"/>
+      <path id="MINA" d="M-125.431,203.713c.857-3.238,1630.2,623.939,1632.192,627.429H-135.588S-126.288,206.951-125.431,203.713Z" transform="translate(114.344 120.108)" fill="#dce5ef"/>
+      <path id="Trazado_314" data-name="Trazado 314" d="M273.308,0H1789.949V1650.364L0,332.343Z" transform="translate(1619.773 1410.862) rotate(90)" fill="#eff4fa"/>
+      <path id="MINA-2" data-name="MINA" d="M-127.019,732.786c.857-3.238,1630.645-5.874,1632.636-2.384L-127.01,2971.712S-127.876,736.024-127.019,732.786Z" transform="translate(115.924 221.371)" fill="#b2c1d1" opacity="0.713"/>
+    </g>
+  </g>
+</svg>

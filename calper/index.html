@@ -565,7 +565,7 @@ $(document).ready(function() {
 
 
 <!-- ========================= SECTION CONTENT 1 // ========================= -->
-<section class="section-content padding-y-lg bg-imgage-1 section-1">
+<section class="section-content padding-y-lg bg-image-1 section-1">
 	<div class="container-fluid">
 		<div class="row">
 			<aside class="col-sm-4">
@@ -680,75 +680,127 @@ $(document).ready(function() {
 	<div class="container">
 	<div class="row align-items-center">
 		<div class="col-md-2">
-			<ul class="list-items-products center text-center">
-				<li><img alt="" src="images/banners/cgsr_2.png"
-			     srcset="images/banners/cgsr_2@2x.png 2x,
-			             images/banners/cgsr_2@3x.png 3x"
-			     class="section-3_image-1 CGSR active" ></li>
-				<li><img alt="" src="images/banners/pf.png"
-			     srcset="images/banners/pf@2x.png 2x,
-			             images/banners/pf@3x.png 3x"
-			     class="section-3_image-2 PF" ></li>
-				<li><img alt="" src="images/banners/scr.png"
-			     srcset="images/banners/scr@2x.png 2x,
-			             images/banners/scr@3x.png 3x"
-			     class="section-3_image-3 SCR" ></li>
-				<li><img alt="" src="images/banners/htet.png"
-			     srcset="images/banners/htet@2x.png 2x,
-			             images/banners/htet@3x.png 3x"
-			     class="section-3_image-4 HTET" ></li>
-				<li><img alt="" src="images/banners/cmlt.png"
-			     srcset="images/banners/cmlt@2x.png 2x,
-			             images/banners/cmlt@3x.png 3x"
-			     class="section-3_image-5 CMLT" ></li>
-				<li><img alt="" src="images/banners/cmut.png"
-			     srcset="images/banners/cmut@2x.png 2x,
-			             images/banners/cmut@3x.png 3x"
-			     class="section-3_image-6 CMUT" ></li>
-				<li><img alt="" src="images/banners/st.png"
-			     srcset="images/banners/st@2x.png 2x,
-			             images/banners/st@3x.png 3x"
-			     class="section-3_image-7 ST" ></li>
-				<li><img alt="" src="images/banners/cl.png"
-			     srcset="images/banners/cl@2x.png 2x,
-			             images/banners/cl@3x.png 3x"
-			     class="section-3_image-8 CL" ></li>
-				<li><img alt="" src="images/banners/h.png"
-			     srcset="images/banners/h@2x.png 2x,
-			             images/banners/h@3x.png 3x"
-			     class="section-3_image-9 H" ></li>
-				<li><img alt="" src="images/banners/pu.png"
-			     srcset="images/banners/pu@2x.png 2x,
-			             images/banners/pu@3x.png 3x"
-			     class="section-3_image-10 PU" ></li>
-				<li><img alt="" src="images/banners/nc.png"
-			     srcset="images/banners/nc@2x.png 2x,
-			             images/banners/nc@3x.png 3x"
-			     class="section-3_image-11 NC" ></li>
-			</ul>
+			<div  id="items-tab" role="tablist" aria-orientation="vertical" class="list-items-products center text-center nav flex-column nav-pills">
+				<a class="nav-link active" id="item-1-tab" data-toggle="pill" href="#item-1" role="tab" aria-controls="item-1" aria-selected="true">
+					<img alt="" src="images/icons/CGSR.png"
+				     srcset="images/icons/CGSR@2x.png 2x,
+				             images/icons/CGSR@3x.png 3x"
+				     class="section-3_image-1 CGSR active" >
+				</a>
+				<a class="nav-link" id="item-2-tab" data-toggle="pill" href="#item-2" role="tab" aria-controls="item-2" aria-selected="false">
+					<img alt="" src="images/icons/PF.png"
+				     srcset="images/icons/PF@2x.png 2x,
+				             images/icons/PF@3x.png 3x"
+				     class="section-3_image-2 PF" >
+			 	</a>
+				<a class="nav-link" id="item-3-tab" data-toggle="pill" href="#item-3" role="tab" aria-controls="item-3" aria-selected="false">
+					<img alt="" src="images/icons/SCR.png"
+				     srcset="images/icons/SCR@2x.png 2x,
+				             images/icons/SCR@3x.png 3x"
+				     class="section-3_image-3 SCR" >
+			 	</a>
+				<a class="nav-link" id="item-4-tab" data-toggle="pill" href="#item-4" role="tab" aria-controls="item-4" aria-selected="false">
+					<img alt="" src="images/icons/HTET.png"
+				     srcset="images/icons/HTET@2x.png 2x,
+				             images/icons/HTET@3x.png 3x"
+				     class="section-3_image-4 HTET" >
+			 	</a>
+				<a class="nav-link" id="item-5-tab" data-toggle="pill" href="#item-5" role="tab" aria-controls="item-5" aria-selected="false">
+					<img alt="" src="images/icons/cmlt.png"
+				     srcset="images/icons/cmlt@2x.png 2x,
+				             images/icons/cmlt@3x.png 3x"
+				     class="section-3_image-5 CMLT" >
+			 	</a>
+				<a class="nav-link" id="item-6-tab" data-toggle="pill" href="#item-6" role="tab" aria-controls="item-6" aria-selected="false">
+					<img alt="" src="images/icons/CMUT.png"
+				     srcset="images/icons/CMUT@2x.png 2x,
+				             images/icons/CMUT@3x.png 3x"
+				     class="section-3_image-6 CMUT" >
+			 	</a>
+				<a class="nav-link" id="item-7-tab" data-toggle="pill" href="#item-7" role="tab" aria-controls="item-7" aria-selected="false">
+					<img alt="" src="images/icons/ST.png"
+				     srcset="images/icons/ST@2x.png 2x,
+				             images/icons/ST@3x.png 3x"
+				     class="section-3_image-7 ST" >
+			 	</a>
+				<a class="nav-link" id="item-8-tab" data-toggle="pill" href="#item-8" role="tab" aria-controls="item-8" aria-selected="false">
+					<img alt="" src="images/icons/CL.png"
+				     srcset="images/icons/CL@2x.png 2x,
+				             images/icons/CL@3x.png 3x"
+				     class="section-3_image-8 CL" >
+			 	</a>
+				<a class="nav-link" id="item-9-tab" data-toggle="pill" href="#item-9" role="tab" aria-controls="item-9" aria-selected="false">
+					<img alt="" src="images/icons/H.png"
+				     srcset="images/icons/H@2x.png 2x,
+				             images/icons/H@3x.png 3x"
+				     class="section-3_image-9 H" >
+			 	</a>
+				<a class="nav-link" id="item-10-tab" data-toggle="pill" href="#item-10" role="tab" aria-controls="item-10" aria-selected="false">
+					<img alt="" src="images/icons/PU.png"
+				     srcset="images/icons/PU@2x.png 2x,
+				             images/icons/PU@3x.png 3x"
+				     class="section-3_image-10 PU" >
+			 	</a>
+				<a class="nav-link" id="item-11-tab" data-toggle="pill" href="#item-11" role="tab" aria-controls="item-11" aria-selected="false">
+					<img alt="" src="images/icons/NC.png"
+			     srcset="images/icons/NC@2x.png 2x,
+				             images/icons/NC@3x.png 3x"
+				     class="section-3_image-11 NC" ></a>
+		
+				</div>
 		</div>
-		<div class="col-md-5 center text-center">
-			<img src="images/banners/raptor-sport-black-planta.png"
-			     srcset="images/banners/raptor-sport-black-planta@2x.png 2x,
-			             images/banners/raptor-sport-black-planta@3x.png 3x"
-			     class="figure-product RAPTOR-SPORT-BLACK-PLANTA">
-		</div>
-		<div class="col-md-5">
-			<article>
-				<header class="figure-item">
-					<img alt="" src="images/banners/cgsr.png"
-			     srcset="images/banners/cgsr@2x.png 2x,
-			             images/banners/cgsr@3x.png 3x"
-			     class="section-3_image-1 CGSR active" >
-				</header><!-- sect-heading -->
-				<p>Desarrollada para las más diversas superficies de trabajo.
-					Entrega propiedades antideslizantes y de gran resistencia,
-					además de un alto coeficiente de roce en pisos, estén secos
-					o húmedos con distintos agentes. </p><br>
 
-					<p class="caption">INTERNATIONAL STANDARD ATSM 1677-05</p>
-				<br>
-			</article>
+		<div class="col-md-9 tab-content detail-item-products center" id="items-tabContent">
+		    <div class="tab-pane fade show active" id="item-1" role="tabpanel" aria-labelledby="item-1-tab">
+				<div class="col-md-6 center text-center">
+					<img src="images/banners/raptor-sport-black-planta.png"
+					     srcset="images/banners/raptor-sport-black-planta@2x.png 2x,
+					             images/banners/raptor-sport-black-planta@3x.png 3x"
+					     class="figure-product RAPTOR-SPORT-BLACK-PLANTA">
+				</div>
+				<div class="col-md-6">
+					<article>
+						<header class="figure-item">
+							<img alt="" src="images/banners/cgsr.png"
+					     srcset="images/banners/cgsr@2x.png 2x,
+					             images/banners/cgsr@3x.png 3x"
+					     class="section-3_image-1 CGSR active" >
+						</header><!-- sect-heading -->
+						<p>Desarrollada para las más diversas superficies de trabajo.
+							Entrega propiedades antideslizantes y de gran resistencia,
+							además de un alto coeficiente de roce en pisos, estén secos
+							o húmedos con distintos agentes. </p><br>
+
+							<p class="caption">INTERNATIONAL STANDARD ATSM 1677-05</p>
+						<br>
+					</article>
+				</div>
+			</div>
+		    <div class="tab-pane fade" id="item-2" role="tabpanel" aria-labelledby="item-2-tab">
+				<div class="col-md-6 center text-center">
+					<img src="images/banners/raptor-sport-black-planta.png"
+					     srcset="images/banners/raptor-sport-black-planta@2x.png 2x,
+					             images/banners/raptor-sport-black-planta@3x.png 3x"
+					     class="figure-product RAPTOR-SPORT-BLACK-PLANTA">
+				</div>
+				<div class="col-md-6">
+					<article>
+						<header class="figure-item">
+							<img alt="" src="images/banners/cgsr.png"
+					     srcset="images/banners/cgsr@2x.png 2x,
+					             images/banners/cgsr@3x.png 3x"
+					     class="section-3_image-1 CGSR active" >
+						</header><!-- sect-heading -->
+						<p>Desarrollada para las más diversas superficies de trabajo.
+							Entrega propiedades antideslizantes y de gran resistencia,
+							además de un alto coeficiente de roce en pisos, estén secos
+							o húmedos con distintos agentes. </p><br>
+
+							<p class="caption">INTERNATIONAL STANDARD ATSM 1677-05</p>
+						<br>
+					</article>
+				</div>
+			</div>
 		</div>
 	</div>
 	</div><!-- container // -->

@@ -2316,12 +2316,16 @@ h4{
 }
 .btn{
   border-radius: 0; 
+  box-shadow: none !important; 
 }
 .btn-outline-primary {
     background-color: none;
     color: #3a5575;
     border: #3a5575 solid 1px;
 }
+.btn-outline-primary:not(:disabled):not(.disabled):active, 
+.btn-outline-primary:not(:disabled):not(.disabled).active, 
+.show > .btn-outline-primary.dropdown-toggle, 
 .btn-outline-primary:hover {
     background-color: #3a5575;
     border: #3a5575 solid 1px;
@@ -2659,6 +2663,93 @@ header, .nav-link{
 
 /* ========== MEGA MENU END ==========*/
 
+/* ========== SLIDERS ==========*/
+.slider-main .owl-prev, .slider-main .owl-next{
+  padding: 20.5px 8px;
+  opacity: 0.5;
+
+}.owl-prev .fa,.owl-next .fa{
+  display: none;
+}
+.owl-prev{
+  background-image: url("../images/icons/Trazado 302.png") !important;
+  margin-left: 10px;
+}
+.owl-next{
+  background-image: url("../images/icons/Trazado 272.png") !important;
+  margin-right: 10px;
+}
+.slider-main .owl-nav [class*='owl-']:hover{
+  opacity: 1;
+  background-color: transparent; 
+}
+
+.slick-prev, .slick-next{
+  width: 43px;
+  height: 200px;
+  background: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slick-prev:before, :before{
+  display: none;
+}
+
+.slick-prev{
+  background-image: url("../images/icons/Trazado 302.png") !important;
+  left: -40px;
+}
+.slick-prev:hover{
+  background-image: url("../images/icons/Trazado 303.png") !important;
+}
+.slick-next{
+  background-image: url("../images/icons/Trazado 272.png") !important;
+  right: -40px;
+}
+.slick-next:hover{
+  background-image: url("../images/icons/Trazado 273.png") !important;
+}
+
+[class*='slick-']:hover{
+  background-color: #fff; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ========== SLIDERS END ==========*/
+
+/* ========== BACKGROUNDS ==========*/
+.bg-image-1{
+  background-image: url(../images/banners/fondo1.svg);
+  background-size: cover;
+  background-position: bottom;
+}
+.bg-image-2{
+  background-image: url(../images/banners/fondo2.svg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+/* ========== BACKGROUNDS END ==========*/
+
+/* ========== TABNAV ==========*/
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+  background: none;
+  opacity: 1;
+}
+.list-items-products .nav-link{
+  text-align: right;
+  opacity: 0.5;
+}
+
+.detail-item-products.tab-content > .active{
+  display: flex;
+}
+
+/* ========== TABNAV END ==========*/
+
+
 
 /* ========== HOME ==========*/
 
@@ -2677,7 +2768,7 @@ header, .nav-link{
   height: 200px;
 }
 .section-1, .section-2{
-  background: #dce5ef;
+  /*background: #dce5ef;*/
 }
 .section-1 aside{
   width: 20%;
@@ -2795,9 +2886,6 @@ header, .nav-link{
   margin: auto;
 }
 .list-items-products {
-    list-style: none;
-    padding: 0;
-    width: 70px;
     border-right: solid 1px;
 }
 .list-items-products img{
