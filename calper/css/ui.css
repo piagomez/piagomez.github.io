@@ -2319,7 +2319,20 @@ h4{
   box-shadow: none !important; 
 }
 .btn-outline-primary {
-    background-color: none;
+    background-color: transparent;
+    color: #3a5575;
+    border: #3a5575 solid 1px;
+}
+.btn-primary {
+    background-color: #3a5575;
+    border: #3a5575 solid 1px;
+    color: white;
+}
+.btn-primary:not(:disabled):not(.disabled):active, 
+.btn-primary:not(:disabled):not(.disabled).active, 
+.show > .btn-primary.dropdown-toggle, 
+.btn-primary:hover {
+    background-color: transparent;
     color: #3a5575;
     border: #3a5575 solid 1px;
 }
@@ -2914,51 +2927,64 @@ header, .nav-link{
   font-weight: 300;
   font-style: italic;
 }
-.section-4{
+.section-blog{
     background-color: #eff4fa;
 }
-.section-4 img{
+.section-blog img{
     background-color: #eff4fa;
     width: 100%;
 }
-.section-4 .container{
+.section-blog .container{
   max-width: 1024px;
 }
-.section-4 .section-4-cards{ 
+.section-blog .section-blog-cards{ 
   margin: 0 25px;
 }
-.section-4 .section-4-card, .section-4 .section-4-card-y{ 
+.section-blog .section-blog-card, .section-blog .section-blog-card-first,
+.section-blog .section-blog-card, .section-blog .section-blog-card-y
+{ 
   margin-bottom: 22px;
   padding: 20px;
   background-color: #fff;
 }
-.section-4 .section-4-card-image,.section-4 .section-4-card-y .section-4-card-image{ 
+.section-blog .section-blog-card-image,.section-blog .section-blog-card-first .section-blog-card-image,
+.section-blog .section-blog-card-image,.section-blog .section-blog-card-y .section-blog-card-image
+{ 
   padding: 0;
 }
-.section-4 .section-4-card-y{  
+.section-blog .section-blog-card-y
+{  
   color: white; 
   width: 391px;
   height: 739px;
   background-color: #3a5575;
 }
-.section-4 .section-4-card-y img{  
+.section-blog .section-blog-card-first img,
+.section-blog .section-blog-card-y img
+{  
   width: 100%;
 }
-.section-4 .section-4-card-y .section-4-content a, .section-4 .section-4-card-y .section-4-content h3, .section-4 .section-4-card-y .section-4-content .caption, .section-4 .section-4-card-y .section-4-content p{  
+.section-blog .section-blog-card-first .section-blog-content a, .section-blog .section-blog-card-first .section-blog-content h3, .section-blog .section-blog-card-first .section-blog-content .caption, .section-blog .section-blog-card-first .section-blog-content p,
+.section-blog .section-blog-card-y .section-blog-content a, .section-blog .section-blog-card-y .section-blog-content h3, .section-blog .section-blog-card-y .section-blog-content .caption, .section-blog .section-blog-card-y .section-blog-content p
+{  
   color: white;
 }
 
-.section-4 .section-4-card-y .section-4-content a:hover{
+.section-blog .section-blog-card-first .section-blog-content a:hover,
+.section-blog .section-blog-card-y .section-blog-content a:hover
+{
   font-weight: bold;
 }
 
-.section-4 .section-4-card-y .section-4-content hr{  
+.section-blog .section-blog-card-first .section-blog-content hr,
+.section-blog .section-blog-card-y .section-blog-content hr
+{  
   background: white;
 }
-.section-4 .section-4-content{
+.section-blog .section-blog-content{
   padding: 20px;
 }
-.section-4 .section-4-content .caption{  
+.section-blog .section-blog-content .caption{  
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
@@ -2968,7 +2994,7 @@ header, .nav-link{
   text-align: left;
   color: #000000;
 }
-.section-4 .section-4-content hr{    
+.section-blog .section-blog-content hr{    
   width: 100px;
   margin: 0 0 20px;
   background: #000000
@@ -3022,6 +3048,7 @@ header, .nav-link{
 }
 .section-intro .header-categ_prod .title{
     margin: auto;
+    margin-left: 10%;
     display: flex;
     align-items: center;
     padding-left: 40px;
@@ -3118,3 +3145,176 @@ header, .nav-link{
   margin: 0;
 }
 /* ========== PRODUCTS END ==========*/
+/* ========== ARTICULES END ==========*/
+
+.section-article{
+  background: #fff;
+}
+.section-article form .btn-primary{
+  display: block;
+}
+.arrow-down{
+    width: 0px;
+    margin: -60px auto 80px;
+    border: 40px solid #fff;
+    border-right: transparent 50px solid;
+    border-bottom: 0px;
+    border-left: transparent 50px solid;
+}
+.bg-gray{
+  background: #eff4fa;
+}
+.img-article img{
+  width: 100%;
+}
+.img-article .border-bottom{
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    width: 50%;
+    margin-top: -50%;
+    margin-left: 53%;
+}
+.img-article .border-top{
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    position: absolute;
+    top: -13px;
+    width: 40%;
+    left: 0;
+}
+.img-article.rlt {
+  margin: 40px auto;
+  position: relative;
+
+}
+.img-article.rlt .border-top{
+    -webkit-transform: none;
+    -moz-transform: none;
+    width: 35%;
+    margin-top: -50px;
+    margin-left: 90%;
+}
+.img-article.rlt .border-bottom{
+    -webkit-transform: none;
+    -moz-transform: none;
+    position: absolute;
+    bottom: -50px;
+    width: 30%;
+    left: -60px;
+    margin: 0;
+}
+/* ========== ARTICULES END ==========*/
+/* ========== FAQs ==========*/
+.faq-list .card{
+    width: 100%;
+}.faq-list .card .btn-link{
+    color: #3a5575;
+    text-decoration: none;
+}
+.faq-list .card .btn-link.collapsed .arrow-down-blue{
+  display: none;
+}
+.faq-list .card .btn-link.collapsed .arrow-right-blue{
+  display: inline-block;
+}
+.faq-list .card .btn-link .arrow-down-blue{
+  display: inline-block;
+}
+.faq-list .card .btn-link .arrow-right-blue{
+  display: none;
+}
+.number-list {
+    list-style-type: decimal;
+}
+/* ========== FAQs END ==========*/
+/* ========== MAP  ==========*/
+.section-map{
+  max-height: 690px;
+}
+.section-map .mapa{
+    position: absolute;
+    height: 100%;
+    max-height: 690px;
+}
+.section-map aside{
+  height: 100%;
+  max-height: 690px;
+  background: #fff;
+  overflow-y: auto;
+}
+.section-map .card{
+  background: #fff;
+  border-radius: 0;
+  border:0;
+}
+.section-map .card-header {
+  background: #fff;
+}
+.section-map .card-header .btn-link{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.section-map .faq-list .card .btn-link:hover .arrow-down-blue{
+  display: inline-block;
+}
+.section-map .faq-list .card .btn-link:hover .arrow-right-blue{
+  display: none;
+}
+/* ========== MAP END ==========*/
+
+/* ========== BLOG ==========*/
+.section-blog .section-blog-card-first .section-blog-content{
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 0 40px;
+}  
+.section-blog .section-blog-card-first{  
+  color: white; 
+  width: 391px;
+  height: auto;
+  background-color: #3a5575;
+  padding: 0;
+}
+
+.section-blog .col-md-6.section-blog-cards{ 
+  margin: auto;
+}
+.section-blog .col-md-6.section-blog-cards:last-child .section-blog-card{ 
+    margin-left: auto;
+}
+/* ========== BLOG END ==========*/
+
+/* ========== ARTICLE ==========*/
+.details-top{
+  margin: 20px auto;
+  padding: 0;
+}
+.details-top .date p{
+  margin: 0;
+  color: #3a5575;
+}
+.details-top .date {
+  padding: 0;
+}
+.details-top .date hr{
+  background-color: #3a5575;
+  max-width: 100px;
+  margin: auto 0;
+}
+.details-top .rrss{
+  text-align: right;
+}
+.details-top .rrss img{
+  width: 30px;
+  margin:5px;
+}
+.article .col-12{
+  padding: 0;
+}
+.article button{
+  display: flex;
+}
+/* ========== ARTICLE END ==========*/
