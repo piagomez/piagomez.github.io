@@ -3,6 +3,8 @@ UIkit bootstrap-ecommerce.com
 ===================== */
 /* ==================== INCLUDE FONTS ======================= */
 @import url("../fonts/roboto/font.css");
+@import url("../fonts/Teko/teko.css");
+@import url("../fonts/Poppins/poppins.css");
 html {
   font-size: 15px; }
 
