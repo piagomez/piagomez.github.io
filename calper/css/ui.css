@@ -2699,7 +2699,7 @@ header, .nav-link{
   background-color: transparent; 
 }
 
-.slick-prev, .slick-next{
+.slick-prev, .slick-next, .slick-prev:focus, .slick-next:focus{
   width: 43px;
   height: 200px;
   background: transparent;
