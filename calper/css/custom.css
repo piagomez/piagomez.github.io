@@ -55,6 +55,9 @@ html:not(.no-transition) body,
 	display: block;
 }
 
+.zeynep a:hover, .zeynep a:focus, .zeynep a:active{
+  color: #3a5575;
+}
 .zeynep ul {
   list-style-type: none;
   padding: 0;
@@ -62,7 +65,28 @@ html:not(.no-transition) body,
 }
 .zeynep ul > li {
 	padding: 15px 26px;
-	display: block;
+	display: block;  
+	font-family: "Teko";
+	font-size: 15px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.4;
+	letter-spacing: 0.6px;
+	text-align: left;
+	color: #4c4f57;
+}
+
+.zeynep .list-unstyled li a{  
+  font-family: "Poppins";
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.62;
+  letter-spacing: 0.52px;
+  text-align: left;
+  color: #4c4f57;
 }
 .zeynep ul > li.has-submenu {
 	background-image: url("../images/icons/Trazado 301.png");
@@ -102,6 +126,15 @@ html:not(.no-transition) body,
 	right: 0;
 }
 .zeynep .submenu-header {
+	font-family: "Teko";
+	font-size: 15px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.4;
+	letter-spacing: 0.6px;
+	text-align: left;
+	color: #707070;
 	background-color: #fff;
 	padding: 20px 26px;
 	cursor: pointer;
@@ -118,21 +151,16 @@ html:not(.no-transition) body,
 	text-decoration: none;
     text-transform: uppercase;
 }
-.zeynep .submenu-header > a:before {
-	content: "";
-	position: absolute;
-    top: 0px;
-    left: 26px;
-    width: 7px;
-    height: 100%;
-	transform: rotate(-180deg);
-	background-image: url("../images/icons/Trazado 301.png");
-    background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: center left;
+.zeynep .submenu-header > a {
+    background-image: url("../images/icons/Trazado 304.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    margin-left: -20px;
+
 }
-.zeynep .submenu-header > a:hover:before {
-	background-image: url("../images/icons/Trazado 273.png");
+.zeynep .submenu-header > a:hover {
+	background-image: url("../images/icons/Trazado 303.png");
 }
 .zeynep .submenu > label {
 	padding-left: 26px;

@@ -1617,9 +1617,10 @@ article:after,
   padding-bottom: 1rem; }
 
 .brand-wrap .logo, .navbar-brand .logo {
-  margin-right: 7px;
-  max-height: 42px;
-  display: inline-block; }
+  height: 40px;
+  display: inline-block; 
+  padding: 0 20px;
+}
 .brand-wrap .logo-text, .navbar-brand .logo-text {
   margin: 0;
   display: inline-block;
@@ -2277,14 +2278,16 @@ body{
   color: #4c4f57;  
   background-color: #3a5575;  
 }
-p{
-  font-size: 14px;
+p{  
+  font-family: Poppins;
+  font-size: 17px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.64;
+  line-height: 1.59;
   letter-spacing: normal;
-  color: #707070;
+  text-align: left;
+  color: #4c4f57;
 }
 
 a{  
@@ -2295,6 +2298,7 @@ a:hover{
 }
 
 h1{
+  font-family: Teko;
   font-size: 46px;
   font-weight: bold;
   font-style: normal;
@@ -2304,7 +2308,8 @@ h1{
   text-align: left;
   color: #3a5575;
 }
-h2{
+h2{  
+  font-family: Teko;
   font-size: 40px;
   font-weight: bold;
   font-style: normal;
@@ -2315,12 +2320,24 @@ h2{
   color: #3a5575;
 }
 h4{  
+  font-family: Teko;
   font-size: 25px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.44;
   letter-spacing: 1px;
+  text-align: left;
+  color: #3a5575;
+}
+h6{    
+  font-family: Teko;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: 0.8px;
   text-align: left;
   color: #3a5575;
 }
@@ -2332,6 +2349,17 @@ h4{
 .btn{
   border-radius: 0; 
   box-shadow: none !important; 
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: uppercase;
+  line-height: 1.63;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3a5575;
+  padding: 10px 25px 8px;
 }
 .btn-outline-primary {
     background-color: transparent;
@@ -2381,6 +2409,16 @@ h4{
 .has-search .form-control-feedback img{
   width: 100%;
 }
+.navbar-top .form-control-feedback img{
+  width: 19.8px;
+  height: 19.9px;
+}
+.zeynep-opened .navbar-dark .navbar-toggler-icon {
+  width: 20.5px;
+  height: 20.5px;
+  background-image: url("../images/icons/cruz cierre.svg");
+}
+
 .has-search .form-control-feedback {
     position: absolute;
     z-index: 2;
@@ -2488,7 +2526,12 @@ header, .nav-link{
 .footer-up .fab{
   margin: 4.5px;
 }
-.footer-top p{
+.footer-top .list-unstyled a:hover{
+  color: #ffffff;
+  font-weight: bold;
+}
+.footer-top p{  
+  font-family: Poppins;
   font-size: 13px;
   font-weight: normal;
   font-style: normal;
@@ -2496,7 +2539,19 @@ header, .nav-link{
   line-height: 1.62;
   letter-spacing: normal;
   text-align: left;
-  color: #ffffff; }
+  color: #ffffff;
+  width: 180px;
+}
+.footer-top a{
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.62;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff; 
+}
 .header-main .navbar-nav {
   margin: auto;
 }
@@ -2537,6 +2592,11 @@ header, .nav-link{
   .section-intro{
     padding-top: 58px;
   }
+
+  .brand-wrap .logo, .navbar-brand .logo {
+    height: 31.7px;
+    display: inline-block; 
+  }
   header {
     height: 58px;
     position: fixed;
@@ -2563,14 +2623,41 @@ header, .nav-link{
   }
   .navbar {
     padding: 0;
+    width: 100px;
+    margin-left: auto;
   }
   .d-xs-none{
     display: none;
   }
 }
+@media screen and (max-width: 767px) {
+
+  .section-2_image-3 {
+    margin-top: -44px !important;
+  }
+
+  .container {
+      max-width: 100%;
+  }
+  .section-blog-card-y{
+    padding: 10px;
+  }
+  .footer-top p{
+    width: 100%;
+  }
+
+  .section-blog .section-blog-card-y{     
+    margin: 0 25px;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .list-items-products {
+    margin-right: -20px;
+  }
+}
 @media screen and (min-width: 768px) {
-  .header-main{
-    height: 74px;
+  .header-main,.header-main > div:first-child,.header-main > div:first-child > div:first-child{
+    height: 100%;
     padding: 0;
   }
 }
@@ -2582,6 +2669,15 @@ header, .nav-link{
   padding-bottom:0px;
 }
 
+.header-main,.header-main > div:first-child,.header-main > div:first-child > div:first-child{
+  height: 78px;
+  padding: 0;
+  width: 100%;
+  margin: auto;
+}
+.header-main > div:first-child > div:first-child div{
+  padding: 0;
+}
 /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
 .navbar .nav-item {
   padding:.5rem .5rem;
@@ -2599,7 +2695,7 @@ header, .nav-link{
   left:0;
   right:0;
 /*  height of nav-item  */
-    top: 72px;
+  top: 75px;
   color: #aaaaaa;
   height: 0;
   overflow:hidden;
@@ -2679,6 +2775,9 @@ header, .nav-link{
   text-align: left;
   color: #3a5575;
 }
+.list-unstyled a:hover{
+  color: #3a5575;
+}
 .list-unstyled img{
   width: 20px;
   height: 20px;
@@ -2691,8 +2790,8 @@ header, .nav-link{
   display: inline-block;
 }
 .dropdown-menu .list-unstyled li:hover{
-  color: #3a55
-  overflow:hidden;75;
+  color: #3a5575;
+  overflow:hidden;
 }
 .list-unstyled li:hover img.active{
   display: inline-block;
@@ -2835,6 +2934,7 @@ header, .nav-link{
 .list-items-products .nav-link{
   text-align: right;
   opacity: 0.5;
+  padding: 0 1rem;
 }
 
 .detail-item-products.tab-content > .active{
@@ -2861,8 +2961,27 @@ header, .nav-link{
   background: #000;
   height: 200px;
 }
-.section-1, .section-2{
-  /*background: #dce5ef;*/
+.section-2 p{  
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.61;
+  letter-spacing: normal;
+  text-align: center;
+  color: #707070;
+}
+.section-3 p{    
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4c4f57;
 }
 .section-1 aside{
   width: 20%;
@@ -2881,14 +3000,15 @@ header, .nav-link{
 .section-intro .slick-slider .card-banner{
    background: url('../images/banners/RUBROS.png');
 }
-.section-intro .slick-slider .card-banner h3{
+.section-intro .slick-slider .card-banner h3{  
+  font-family: Teko;
   font-size: 35px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.46;
   letter-spacing: 1.4px;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
 }
 .section-intro .slick-slider .card-banner p{
@@ -2991,7 +3111,9 @@ header, .nav-link{
   background: #fff;
 }
 .figure-item img, .figure-product {
-  width: 100%;
+    width: 60%;
+    margin: 0 auto;
+    display: block;
 }
 .section-3 .figure-item{
   width: auto;
@@ -3021,6 +3143,17 @@ header, .nav-link{
 .section-blog .section-blog-cards{ 
   margin: 0 25px;
 }
+.section-blog .section-blog-cards p{ 
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4c4f57;
+}
 .section-blog .section-blog-card, .section-blog .section-blog-card-first,
 .section-blog .section-blog-card, .section-blog .section-blog-card-y
 { 
@@ -3039,6 +3172,30 @@ header, .nav-link{
   width: 391px;
   height: 739px;
   background-color: #3a5575;
+}
+.section-blog .section-blog-card-y h5
+{      
+  font-family: Teko;
+  font-size: 27px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.26;
+  letter-spacing: 1.08px;
+  text-align: left;
+  color: #ffffff;
+}
+.section-blog .section-blog-card-y p
+{      
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
 }
 .section-blog .section-blog-card-first img,
 .section-blog .section-blog-card-y img
@@ -3065,7 +3222,8 @@ header, .nav-link{
 .section-blog .section-blog-content{
   padding: 20px;
 }
-.section-blog .section-blog-content .caption{  
+.section-blog .section-blog-content .caption{    
+  font-family: Poppins;
   font-size: 12px;
   font-weight: normal;
   font-style: normal;

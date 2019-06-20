@@ -74,7 +74,7 @@ $(document).ready(function() {
 			<li class=""> | </li>
 	        <li class="nav-item"><a href="faq.html" class="" >FAQS</a></li>
 	        <li class="nav-item"><a href="#" class="" >EN</a></li>
-			<li class="nav-item"><a href="#" class="" > ESP</a></li>
+			<li class="nav-item"><a href="#" class="" > <b>ESP</b></a></li>
 	      </ul>
 	    </div> <!-- collapse.// -->
 	  </div>
@@ -85,16 +85,18 @@ $(document).ready(function() {
 			<div class="row align-items-center">
 				<div class="navbar-brand col-lg-2 col-sm-4">
 					<div class="brand-wrap">
-						<img src="images/logo-calper.png"
+						<a href="index.html">
+							<img src="images/logo-calper.png"
 						     srcset="images/logo-calper@2x.png 2x,
 						             images/logo-calper@3x.png 3x"
 						     class="logo LOGO-CALPER-FOOTWEAR-BLANCO">
+						 </a>
 					</div> <!-- brand-wrap.// -->
 				</div>
 				<div class="navbar-main col-lg-4 col-xl-5 col-3 col-sm-2 p-static">
 					
 					<nav class="navbar navbar-top navbar-expand-lg navbar-dark p-static">
-						<a href=""><span class="fa fa-search form-control-feedback  d-lg-none "></span></a>
+						<a href=""><span class="form-control-feedback  d-lg-none "><img src="./images/icons/lupa blanca.svg" alt="icon-search"></span></a>
 
 						<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
 						  <span class="navbar-toggler-icon"></span>
@@ -311,41 +313,34 @@ $(document).ready(function() {
         </div>
 
         <ul>
-          <li>
+          <li class="has-submenu">
             <a href="#" data-submenu="catacteristics">Características</a>
 
 	        <div id="catacteristics" class="submenu">
 	          <div class="submenu-header" data-submenu-close="catacteristics">
 	            <a href="#">Características</a>
 	          </div>
-
-	          <label>Características</label>
-
-	          <ul>
-	            <li>
-	              <span><img src="" alt=""></span><a href="#">Antideslizante</a>
-	            </li>
-
-	            <li>
-	              <a href="#">Resistente a líquidos</a>
-	            </li>
-
-	            <li>
-	              <a href="#">Livianos</a>
-	            </li>
-
-	            <li>
-	              <a href="#">Ergonómicos</a>
-	            </li>
-
-	            <li>
-	              <a href="#">Fácil de limpiar</a>
-	            </li>
-
-	            <li>
-	              <a href="#">Peligro Eléctrico</a>
-	            </li>
-	          </ul>
+				<ul class="list-unstyled">
+					<li> <a href="#">
+						<img class="active" src="./images/icons/Grupo 1180.svg" alt=""> 
+						<img class="inactive" src="./images/icons/Grupo 1185.svg" alt=""> 
+						<div class="item-list">Antideslizante</div></a></li>
+					<li> <a href="#">
+						<img class="active" src="./images/icons/Grupo 1181.svg" alt=""> 
+						<img class="inactive" src="./images/icons/Grupo 1186.svg" alt="">  <div class="item-list">Resistente a líquidos</div></a></li>
+					<li> <a href="#">
+						<img class="active" src="./images/icons/Grupo 1182.svg" alt=""> 
+						<img class="inactive" src="./images/icons/Grupo 1187.svg" alt="">  <div class="item-list">Livianos</div></a></li>
+					<li> <a href="#">
+						<img class="active" src="./images/icons/Grupo 1183.svg" alt=""> 
+						<img class="inactive" src="./images/icons/Grupo 1188.svg" alt="">  <div class="item-list">Ergonómicos</div></a></li>
+					<li> <a href="#">
+						<img class="active" src="./images/icons/Grupo 1184.svg" alt=""> 
+						<img class="inactive" src="./images/icons/Grupo 1189.svg" alt="">  <div class="item-list">Fácil de limpiar</div></a></li>
+					<li> <a href="#">
+						<img class="active" src="./images/icons/Trazado 193.svg" alt=""> 
+						<img class="inactive" src="./images/icons/Trazado 194.svg" alt="">  <div class="item-list">Peligro Eléctrico</div></a></li>
+				</ul>
 	        </div>
           </li>
 
@@ -379,9 +374,6 @@ $(document).ready(function() {
                 <div class="submenu-header" data-submenu-close="electronics">
                   <a href="#">Categories</a>
                 </div>
-
-                <label>Electronics</label>
-
                 <ul>
                   <li>
                     <a href="#">Camera & Photo</a>
@@ -546,11 +538,12 @@ $(document).ready(function() {
 <!-- ========================= SECTION CONTENT 2 END// ========================= -->
 
 
+
 <!-- ========================= FOOTER ========================= -->
 <footer class="section-footer">
 	<div class="container">
 		<section class="footer-top padding-top container">
-			<div class="row">
+			<div class="row container">
 				 <div class=" footer-up  float-right">
 					<a href="#"> <img src="./images/icons/Grupo 1391.png" alt="icon-linkedin"><img class="active" src="./images/icons/Grupo 1394.png" alt="icon-linkedin"> </a>
 			        <a href="#"> <img src="./images/icons/Grupo 1392.png" alt="icon-facebook"><img class="active" src="./images/icons/Grupo 1395.png" alt="icon-facebook"> </a>
@@ -601,7 +594,6 @@ $(document).ready(function() {
 		<div class="container">
 		<section class="footer-bottom row border-top-white">
 			<div class="col-sm-6"> 
-				<p class="text-white-50">Hecho con <3 por Pía Gómez Q.</p>
 			</div>
 			<div class="col-sm-6">
 				<p class="text-md-right">
