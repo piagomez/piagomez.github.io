@@ -2460,14 +2460,203 @@ header, .nav-link{
 }
 
  /*========== FILTERS ==========*/
-.card .card-filter{
+.section-prod .card{
   border: 0;
  }
+.section-prod .banner-detail{
+  background: #3a55751f;
+  margin: 0 auto 2rem ;
+  padding: 0;
+ }
+.section-prod .banner-detail div{
+  display: inline-block;
+ }
+
+.section-prod .banner-mobile{
+  background: #3a5575;
+  margin: 0 auto 2rem ;
+  padding: 1rem;
+ }
+ 
+.section-prod .banner-detail p {  
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+  text-align: left;
+ }
+.section-prod .banner-detail p, .section-prod .banner-detail h4{
+  color: #fff;
+  margin: 0;
+ }
+.section-prod .banner-detail img{
+  padding: 2rem 1rem;
+  text-align: right;
+ }
+.section-prod .banner-detail div:last-child{
+  padding: 1rem;
+  background: #3a5575;
+ }
+.bg-border-banner{    
+    width: 0px;
+    margin-top: 0px;
+    left: calc( 25% - 100px);
+    display: inline-block;
+    position: absolute;
+    border: 73px solid #3a5575;
+    border-right: #3a5575 50px solid;
+    border-bottom: transparent 74px solid;
+    border-left: transparent 50px solid;
+ }
+.section-prod .card .card-filter{
+  border: 0;
+}
+.section-prod .card.card-filter .card-header .icon-action { 
+  margin: 0;
+}
+.section-prod .card.card-filter .card-header .title {  
+  font-family: Teko;
+  font-size: 19px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.7;
+  letter-spacing: 0.76px;
+  text-align: left;
+  color: #3a5575;
+}
+.filters{
+  max-width: 262px;
+}
+
+.filter-content{
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #707070;
+}
+.filter-content .form-check-input{
+    margin-top: 10px;
+}
+.filter-content .form-check-label{
+    line-height: 2.4;
+}
+.filter-content .item-list{
+  margin-left: 8px;
+  display: inline-block;
+  line-height: 1.2;
+}
+
+/* Hide the browser's default checkbox */
+.form-check  {
+  display: block;
+  position: relative;
+  padding-left: 12px;
+  margin-bottom: 12px;
+  height: 36px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.form-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background-color: #fff;
+  border: 1px solid #707070;
+  border-radius: 100%;
+}
+
+/* On mouse-over, add a grey background color */
+.form-check:hover input ~ .checkmark {
+  border: 1px solid #3a5575;
+}
+
+/* When the checkbox is checked, add a blue background */
+.form-check input:checked ~ .checkmark {
+  background-color: #fff;
+  border: 1px solid #3a5575;
+  border-radius: 100%;
+
+}
+/* When the checkbox is checked, add a blue background */
+.form-check input:checked ~ .checkmark + .form-check-label{
+  color: #3a5575;
+}
+.form-check input:checked ~ .checkmark + .form-check-label .active{
+  display: inline-block;
+}
+.form-check input:checked ~ .checkmark + .form-check-label .inactive{
+  display: none;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.form-check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.form-check .checkmark:after {
+  left: 2px;
+  top: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+  background: #3a5575;
+}
+
 .card-group-item {
     border: 0;
 }
 .card-group-item .card-header {
     background: none;
+}
+
+.card.card-filter .card-header .collapsed .title { 
+  color: #707070;
+}
+.card-group-item .card-header .icon-action{
+    width: 8px;
+}
+.card-group-item .card-header img{
+    display: none;
+}
+.card-group-item .card-header .collapsed img{
+    display: inline-block;
+}
+.card-group-item .card-header img.active{
+    display: inline-block;
+}
+.card-group-item .card-header .collapsed img.active{
+    display: none;
 }
 
  /*========== FILTERS END ==========*/
@@ -3305,12 +3494,16 @@ header, .nav-link{
 .section-prod{
   background: #fff;
 }
-.section-prod .btn-outline-primary{
+.section-prod .btn{
   width: 100%;
   margin: 6px 0;
+  text-align: center;
 }
 .section-prod .categ{
   margin-bottom: 6px;
+}
+.section-prod .categ .btn:first-child{
+  margin-top: 0;
 }
 .section-prod .card-product{
   width: 217px;
@@ -3323,6 +3516,7 @@ header, .nav-link{
     box-shadow: none;
 }
 .section-prod .card-product .title{  
+  font-family: Poppins;
   font-size: 12px;
   font-weight: 500;
   font-style: normal;
@@ -3335,6 +3529,7 @@ header, .nav-link{
   align-self: flex-end;
 }
 .section-prod .card-product .description{    
+  font-family: Poppins;
   font-size: 11px;
   font-weight: normal;
   font-style: normal;
@@ -3342,7 +3537,7 @@ header, .nav-link{
   line-height: 1.64;
   letter-spacing: normal;
   text-align: left;
-  color: #707070;
+  color: #707070;  
 }
 .section-prod .card-product hr{   
   margin: 2px auto;
