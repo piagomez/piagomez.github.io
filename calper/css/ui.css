@@ -1580,7 +1580,20 @@ article:after,
 
 /* ================== SECTIONS =================== */
 .navbar-top {
-  padding: 0; }
+  padding: 0; 
+  font-family: 'Poppins-Light';  
+  font-size: 13px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.62;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+.navbar-up a:hover,.section-footer a:hover{
+  font-family: 'Poppins-SemiBold';  
+}
 
 .navbar-landing {
   -webkit-transition: .5s;
@@ -2365,18 +2378,38 @@ h4{
     color: #707070;
 }
 
+.has-search .form-control-feedback img{
+  width: 100%;
+}
 .has-search .form-control-feedback {
     position: absolute;
     z-index: 2;
     display: block;
-    width: 2.9rem;
-    height: 39px;
-    line-height: 2.6rem;
+    margin: 12px;
+    width: 15.5px;
+    /*height: 39px;*/
+    line-height: 0;
     text-align: center;
     pointer-events: none;
     color: #aaa;
 }
 
+.navbar-up .nav-link img, .footer-up.float-right img{
+  width: 16.5px;
+  display: inline-block;
+}
+.navbar-up .nav-link img.active, .footer-up.float-right img.active{
+  display: none;
+}
+.navbar-up li:hover .nav-link img, .footer-up.float-right a:hover img{
+  display: none;
+}
+.navbar-up li:hover .nav-link img.active, .footer-up.float-right a:hover img.active{
+  display: inline-block;
+}
+.footer-up.float-right a{
+  padding: 0.5rem;
+}
 header, .nav-link{
   font-size: 16px;
   font-weight: normal;
@@ -2408,10 +2441,12 @@ header, .nav-link{
 /* adds some margin below the link sets  */
 .navbar .dropdown-menu div[class*="col"] {
    margin-bottom:1rem;
+   overflow:hidden;
 }
 
 .navbar .dropdown-menu {
   border:none;
+  overflow:hidden;
   border-radius: 0;
   width: 100vw;
   left: 0;
@@ -2469,7 +2504,7 @@ header, .nav-link{
   margin: auto;
   margin-right: 0;
 }
-.header-main .navbar-nav .dropdown-toggle::after{
+.header-main .navbar-nav .dropdown-toggle .arrow-down{
   display: block;
   margin: auto;
 }
@@ -2556,6 +2591,9 @@ header, .nav-link{
 /* makes the dropdown full width  */
 .navbar .dropdown, .p-static {position:static;}
 
+.navbar .dropdown-menu.show{
+  height: 380px;
+}
 .navbar .dropdown-menu {
   width:100vw;
   left:0;
@@ -2563,36 +2601,61 @@ header, .nav-link{
 /*  height of nav-item  */
     top: 72px;
   color: #aaaaaa;
+  height: 0;
+  overflow:hidden;
+  transition: 1s;
 }
-.dropdown-toggle::after{
-  transform: rotate(-90deg);
-  background-image: url("../images/icons/Trazado 302.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center left;
-  border: 0;
-  width: 7px;
-  height: 22px;
+.nav-item.dropdown:hover .arrow{
+  transform: rotate(-90deg) translateX(0px);
+  transition: 0.5s;
+}
+.arrow{
+  transform: rotate(-90deg) translateX(9px);
+  transition: 0.5s;
+  width: 10px;
+  position: absolute;
+  left: calc(50% - 5px);
+}
+.arrow img{
+  width: 100%;
+}
+.nav-link.dropdown-toggle{
+  position: relative;
+}
+.nav-link.dropdown-toggle::after{
+  content: none;
 }
 .navbar .dropdown-menu .vr {
   height: auto;
+  overflow:hidden;
   width: 1px;
   background: #aaa;
   margin: 0 10px;
 }
 .navbar .dropdown-menu aside {
   margin-right: -20px;
+  overflow:hidden;
 }
 .navbar .dropdown-menu section {
   margin: 0 40px;
+  overflow:hidden;
 }
+.dropdown-menu {
+  display: block;
+  padding: 0;
+}
+
   /* shows the dropdown menu on hover */
-.navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
-  display:block!important;
+.navbar .dropdown:hover .dropdown-menu, 
+.navbar .dropdown .dropdown-menu:hover {
+  display: block !important;
+  overflow:hidden;
+  height: 380px;
 }
 
 .navbar .dropdown-menu a{  
   font-size: 14px;
+  overflow:hidden;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -2603,9 +2666,11 @@ header, .nav-link{
 }
 }.navbar .dropdown-menu a:hover{
   color: #3a5575;
+  overflow:hidden;
 }
 .navbar .dropdown-menu h5{  
   font-size: 19px;
+  overflow:hidden;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -2617,9 +2682,23 @@ header, .nav-link{
 .list-unstyled img{
   width: 20px;
   height: 20px;
-  border: 1px solid black;
-  display: inline-block;
   margin: 8px;
+}
+.list-unstyled img.active{
+  display: none;
+}
+.list-unstyled img.inactive{
+  display: inline-block;
+}
+.dropdown-menu .list-unstyled li:hover{
+  color: #3a55
+  overflow:hidden;75;
+}
+.list-unstyled li:hover img.active{
+  display: inline-block;
+}
+.list-unstyled li:hover img.inactive{
+  display:none;
 }
 .list-unstyled span{
   vertical-align: middle;
