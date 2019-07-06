@@ -2289,6 +2289,11 @@ p{
   text-align: left;
   color: #4c4f57;
 }
+li{  
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 1.71;
+}
 
 a{  
   color: #4c4f57;
@@ -2843,6 +2848,19 @@ header, .nav-link{
   .list-items-products {
     margin-right: -20px;
   }
+
+  .faq-list .card .btn-link .arrow-right-blue img{
+    margin-top: -10px; 
+
+    height: 46px;
+  }
+  .faq-list .card .btn-link .arrow-down-blue img{
+    width: 46px;
+  }
+  .faq-list .card .btn-link .header-faq{
+
+    font-size: 24px;
+  }
 }
 @media screen and (min-width: 768px) {
   .header-main,.header-main > div:first-child,.header-main > div:first-child > div:first-child{
@@ -3179,7 +3197,7 @@ header, .nav-link{
   width: 80%;
 }
 .section-1 img{
-  bottom: 0;
+  bottom: -92px;
   position: absolute;
 }
 .section-1 .row{
@@ -3644,21 +3662,71 @@ header, .nav-link{
 }.faq-list .card .btn-link{
     color: #3a5575;
     text-decoration: none;
+    width: 100%;
 }
-.faq-list .card .btn-link.collapsed .arrow-down-blue{
+.faq-list .card .btn-link[aria-expanded="true"] .arrow-down-blue{
+  display: flex;
+}
+.faq-list .card .btn-link[aria-expanded="true"] .arrow-right-blue{
   display: none;
 }
-.faq-list .card .btn-link.collapsed .arrow-right-blue{
-  display: inline-block;
+.faq-list .card .btn-link .arrow-right-blue img{
+  margin-top: -10px; 
 }
-.faq-list .card .btn-link .arrow-down-blue{
-  display: inline-block;
-}
-.faq-list .card .btn-link .arrow-right-blue{
+.faq-list .card .btn-link[aria-expanded="false"] .arrow-down-blue{
   display: none;
+}
+.faq-list .card .btn-link[aria-expanded="false"] .arrow-right-blue{
+  display: flex;
 }
 .number-list {
     list-style-type: decimal;
+}
+.faq-list .card-header {
+    background: white;
+    border: 0;    
+    padding: 1.25rem 1.25rem 0.75rem;
+}
+.faq-list .card {
+    border: 0;
+    border-bottom: solid 1px #3a5575;
+}
+.faq-list .card-header button{
+  white-space: normal;
+  padding:0;
+}
+.faq-list .card-header .arrow-blue{
+  text-align: center;
+}
+.faq-list .card-header .arrow-blue img{
+  padding: 10px;
+  margin: 0;
+}
+.faq-list .card-header .header-faq{
+  font-family: Teko;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: 1.2px;
+  text-align: left;
+  color: #3a5575;
+}
+
+.card-body p{  
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4c4f57;
+}
+.card-body img{  
+  max-width: 100%;
 }
 /* ========== FAQs END ==========*/
 /* ========== MAP  ==========*/
@@ -3752,3 +3820,44 @@ header, .nav-link{
   display: flex;
 }
 /* ========== ARTICLE END ==========*/
+
+/* ========== FORMS CONTENT ==========*/
+.section-content .form-control{
+  background: transparent;
+  border: 0;
+  border-bottom: solid 1px #707070;
+  font-family: Poppins;
+  border-radius: 0;
+}
+.section-content .form-control:focus {
+    color: inherit;
+    background-color: transparent;
+    border-color: inherit;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.section-content form .title-form{
+  font-family: Teko;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  letter-spacing: 0.88px;
+  text-align: left;
+  color: #3a5575;
+}
+.section-content form hr{
+  width: 80%;
+  height: 0;
+  border: solid 1px #3a5575;
+  margin: 0;
+}
+.section-content h2 img{
+    margin-left: -37px;
+    padding-right: 10px;
+}
+/* ========== FORMS CONTENT END ==========*/
+
+
