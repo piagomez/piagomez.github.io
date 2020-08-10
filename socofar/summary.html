@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/starter.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <title>Socofar</title>
+  </head>
+  <body>
+    <header id="header" class="fixed-top">
+    <div class="d-flex align-items-center">
+      <div class="logo mr-auto"><a href="/portal">
+                <img class="mb-2" src="assets/img/logotipo.svg" alt="" width="120">
+              </a></div>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav class="nav-menu navbar navbar-expand-lg">
+        <ul>
+          <!-- <li class="active"><a href="/pedidos">Pedidos</a></li> -->
+          <li class="active"><a href="/portal">Pedidos</a></li>
+          <li><a href="/pagos">Historial de Pagos</a></li>
+          <li><a href="/#">Opciones</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header>
+    <div class="portal-content">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 aos-init aos-animate text-center d-none d-md-block" data-aos="fade-right" data-aos-delay="100" data-aos="fade-left" >
+          <div class="card resume-content">
+            <div class="card-header"><img src="/assets/img/mask-resume.svg" alt=""></div>
+            <div class="card-body">
+              <div class="card-text">
+                <span>Nombre Empresa </span> <p class="text-truncate">Clínica Alemana S.A</p>
+              </div>
+              <div class="card-text">
+                <span>RUT empresa </span> <p>96.770.100-9</p>
+              </div>
+              <div class="card-text">
+                <span>Correo Corporativo </span> <p class="text-truncate">finanzas@interno.clini...</p>
+              </div>
+              <div class="card-text">
+                <span class="text-primary">Deuda Total </span> <h4 class="mt-1">$100.000.000</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-9 aos-init aos-animate content d-flex flex-column mt-1 mb-5" data-aos="fade-up" data-aos-delay="100">
+          <h3>Pago realizado</h3>
+          <h2>resumen de pago</h2>
+          <div class="card">
+            <div class="row d-flex flex-row px-5 pt-5 mb-0 justify-items-between  align-items-start">
+              <div class="col-2 text-center p-0">
+                <img src="/assets/img/check.svg" alt="">
+              </div>
+              <div class="col-10">
+                <p>Has realizado un pago en línea a través de Banco de Chile.
+  Hemos enviado copia(s) del comprobante al correo <a href="mailto:finanzas.@interno.clinicaalemana.cl">finanzas.@interno.clinicaalemana.cl</a>.</p>
+                <div class="card card-row d-flex flex-row justify-content-between mb-2">
+                  <div class="form-group">
+                    <label for="inputLocale">comprobante Nº</label>  
+                    <span id="inputLocale">334455667788</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputMount">fecha de pago</label>  
+                    <span id="inputMount">14/07/2020</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputCredited">pagado</label>  
+                    <span id="inputCredited">$100.000.000</span>
+                  </div>
+                </div>
+                <p>Puedes revisar el comprobante en <a href="">nuestro sitio web</a> o <a href="">descargarlo en formato PDF</a>.</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row px-5 pb-5 mt-0 d-flex justify-content-between align-items-start">
+              <div class="col-2 text-center p-0">
+                <img src="/assets/img/email.svg" alt="">
+              </div>
+              <div class="col-10">
+                <form action="" class="d-flow flex-row">
+                  <div class="form-group">
+                    <label for="">enviar una copia del comprobante a:</label>
+                    <input type="email" placeholder="correo@empresa.cl" class="form-control">
+                  </div>
+                  <button type="submit" class="btn btn-outline-secondary  align-self-start" desabled>ENVIAR</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <br>
+          <div class="container row mt-2 mb-5 row-buttons">
+            <a class="btn btn-primary mr-3" href="#">descargar pdf</a>
+            <a class="btn btn-outline-primary" href="/portal">volver al inicio</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <footer id="footer">
+    <div class="container pt-4 d-flex justify-content-between">
+      <div class="copyright">
+        <!-- &copy; Copyright <strong><span>Socofar</span></strong>. All Rights Reserved -->
+      </div>
+      <div class="logo">
+        <img class="" src="assets/img/logotipo-gray.svg" alt="" width="150">
+        <p>©2020</p>
+      </div>
+
+      <div class="credits">
+        <!-- Designed by <a href="https://bootstrapmade.com/">Soledad Moris</a> -->
+      </div>
+    </div>
+  </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script src="node_modules/gijgo/js/gijgo.min.js"></script>
+    <script type="module" src="assets/js/starter.js"></script>
+    <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+  </body>
+</html>

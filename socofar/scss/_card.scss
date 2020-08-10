@@ -1,0 +1,42 @@
+.card{
+	background: $card-bg;
+	border: 1px solid $card-b;
+	box-sizing: border-box;
+	box-shadow: $card-box;
+	border-radius: $card-r;
+}
+.card-row{
+	padding: 20px 30px 24px;
+	.form-group{
+		padding: 0 5px;
+		margin: 0;
+	}
+	.form-group label{
+		padding-bottom: 7px;
+	}
+
+}
+.card-list{
+	margin-bottom: 5px;
+	form{
+		width: 100%;
+	}
+	.form-control:disabled{
+		background: #fff;
+	}
+}
+.card-list .form-group .credit{
+    padding-bottom: 0px;
+}
+.card-list .form-group .custom-control-label{
+	padding: 0;
+}
+.card-list:last-of-type{
+	background: #E4E9EE;
+}
+.collapse .card{
+	background: $socofar-gray_color;
+	margin-top: -17px;
+	padding-top: 40px;
+	z-index: -1;
+}

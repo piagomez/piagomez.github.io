@@ -1,0 +1,37 @@
+
+$btn-primary_bg: #047BFE;
+$btn-primary-box: 2px 2px 3px rgba(0, 0, 0, 0.15);
+$btn-primary-p: 9px 20px 8px 20px;
+
+.btn{
+	border-radius: 50px;
+	box-shadow: $btn-primary-box;
+	padding: $btn-primary-p
+}
+.btn-primary{
+	background: $btn-primary_bg;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.05em;
+}
+.btn-outline-primary {
+	border: 1px solid $btn-primary_bg;
+	color: $btn-primary_bg;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+.btn-link{
+	box-shadow: none;
+}
+.btn:not(:disabled):not(.disabled):active.btn-link{
+	background: transparent;
+	box-shadow: none;
+	outline: 0;
+}
+.btn:focus.btn-link{
+	background: transparent;
+	box-shadow: none;
+	outline: 0;
+}

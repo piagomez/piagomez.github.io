@@ -1,0 +1,23 @@
+label{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 13px;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	color: $label-color;
+	margin-bottom:0;
+}
+input{
+	background: $input-bg;
+	border: 1px solid $input-b;
+	box-sizing: border-box;
+	border-radius: $input-r;
+	padding: $input-p;
+}
+.gj-datepicker span button{
+    padding: 0px;
+    box-shadow: none;
+}

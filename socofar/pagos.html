@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/starter.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <title>Socofar - Historial de Pagos</title>
+  </head>
+  <body>
+    <header id="header" class="fixed-top">
+    <div class="d-flex align-items-center">
+      <div class="logo mr-auto"><a href="/portal">
+                <img class="mb-2" src="assets/img/logotipo.svg" alt="" width="120">
+              </a></div>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav class="nav-menu navbar navbar-expand-lg">
+        <ul>
+          <!-- <li class="active"><a href="/pedidos">Pedidos</a></li> -->
+          <li><a href="/portal">Pedidos</a></li>
+          <li class="active"><a href="/pagos">Historial de Pagos</a></li>
+          <li><a href="/#">Opciones</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header>
+    <div class="portal-content">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 aos-init aos-animate text-center d-none d-md-block" data-aos="fade-right" data-aos-delay="100" data-aos="fade-left" >
+          <div class="card resume-content">
+            <div class="card-header"><img src="/assets/img/mask-resume.svg" alt=""></div>
+            <div class="card-body">
+              <div class="card-text">
+                <span>Nombre Empresa </span> <p class="text-truncate">Clínica Alemana S.A</p>
+              </div>
+              <div class="card-text">
+                <span>RUT empresa </span> <p>96.770.100-9</p>
+              </div>
+              <div class="card-text">
+                <span>Correo Corporativo </span> <p class="text-truncate">finanzas@interno.clini...</p>
+              </div>
+              <div class="card-text">
+                <span class="text-primary">Deuda Total </span> <h4 class="mt-1">$100.000.000</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-9 aos-init aos-animate content d-flex flex-column mt-1 mb-5" data-aos="fade-up" data-aos-delay="100">
+          <h3>Historial de Pagos</h3>
+          <h2>búsqueda de pagos anteriores</h2>
+          <div class="card card-row d-flex flex-row">
+            <form action="" class="d-flex justify-content-between align-items-end">
+              <div class="form-group">
+                <label for="startDate">Fecha de pago</label>  
+                <input id="startDate"placeholder="01/06/2020"/>
+              </div>
+              <div class="form-group">
+                <label for="endDate"></label>  
+                <input id="endDate"placeholder="01/06/2020"/>
+              </div>
+              <div class="form-group">
+                <label for="inputSucursal">Sucursal</label>  
+                <select name="" class="custom-select" id="inputSucursal" >
+                  <option selected>La Dehesa - 334456765</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-outline-secondary align-self-end"> buscar </button>
+            </form>
+          </div>
+          <br>
+          <h2>PAgos anteriores</h2>
+          <div class="card card-list card-row d-flex flex-row">
+            <form action="" class="d-flex justify-content-between align-items-end">
+              <div class="form-group">
+                <label for="inputFn">fecha de pago</label>  
+                <span id="inputFn">7/7/2020</span>
+              </div>
+              <div class="form-group">
+                <label for="inputDateLast">Nº comprobante</label>  
+                <span id="inputDateLast">1000234556</span>
+              </div>
+              <div class="form-group">
+                <label for="inputLocale">documentos</label>  
+                <span id="inputLocale">3</span>
+              </div>
+              <div class="form-group">
+                <label for="inputMount">monto pagado</label>  
+                <span id="inputMount">$100.000.000</span>
+              </div>
+              <div class="buttons-icon">
+	              <a href="#"><i class="far fa-envelope text-primary"></i></a>
+	              <a href="#"><i class="far fa-file-pdf text-primary"></i></a>
+	              <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><i class="fa fa-chevron-down text-primary"></i></button>
+	          </div>
+            </form>
+          </div>
+		  <div id="collapseOne" class="collapse show" >
+			  <div class="card card-body">
+	            <div class="d-flex justify-content-between align-items-center">
+	              <div data-toggle="tooltip" data-placement="top" title="Vendida"><i class="far fa-times-circle text-danger"></i></div>
+	              <div>
+	                <label for="inputFn">Factura Nº</label>  
+	                <span id="inputFn">23456700</span>
+	              </div>
+	              <div>
+	                <label for="inputDateLast">Vence</label>  
+	                <span id="inputDateLast" class="text-danger">07/07/2020</span>
+	              </div>
+	              <div>
+	                <label for="inputLocale">sucursal</label>  
+	                <span id="inputLocale">Santiago</span>
+	              </div>
+	              <div>
+	                <label for="inputMount">monto total</label>  
+	                <span id="inputMount">$100.000.000</span>
+	              </div>
+	              <div>
+	                <label for="inputCredited">abonado</label>  
+	                <span id="inputCredited">$100.000.000</span>
+	              </div>
+	              <div>
+	                <label for="inputCredited">monto pendiente</label>  
+	                <span id="inputCredited">$100.000.000</span>
+	              </div>
+	            </div>
+	            <hr>
+	            <div class="d-flex justify-content-between align-items-center">
+	              <div data-toggle="tooltip" data-placement="top" title="Por vencer"><i class="fa fa-exclamation-circle text-warning"></i></div>
+	              <div>
+	                <label for="inputFn">Factura Nº</label>  
+	                <span id="inputFn">23456700</span>
+	              </div>
+	              <div>
+	                <label for="inputDateLast">Vence</label>  
+	                <span id="inputDateLast">07/07/2020</span>
+	              </div>
+	              <div>
+	                <label for="inputLocale">sucursal</label>  
+	                <span id="inputLocale">Santiago</span>
+	              </div>
+	              <div>
+	                <label for="inputMount">monto total</label>  
+	                <span id="inputMount">$100.000.000</span>
+	              </div>
+	              <div>
+	                <label for="inputCredited">abonado</label>  
+	                <span id="inputCredited">$100.000.000</span>
+	              </div>
+	              <div>
+	                <label for="inputCredited">monto pendiente</label>  
+	                <span id="inputCredited">$100.000.000</span>
+	              </div>
+	            </div>
+	            <hr>
+	            <div class="d-flex justify-content-between align-items-center">
+	              <div data-toggle="tooltip" data-placement="top" title="Pagado"><i class="far fa-check-circle text-success"></i></div>
+	              <div>
+	                <label for="inputFn">Factura Nº</label>  
+	                <span id="inputFn">23456700</span>
+	              </div>
+	              <div>
+	                <label for="inputDateLast">Vence</label>  
+	                <span id="inputDateLast">07/07/2020</span>
+	              </div>
+	              <div>
+	                <label for="inputLocale">sucursal</label>  
+	                <span id="inputLocale">Santiago</span>
+	              </div>
+	              <div>
+	                <label for="inputMount">monto total</label>  
+	                <span id="inputMount">$100.000.000</span>
+	              </div>
+	              <div>
+	                <label for="inputCredited">abonado</label>  
+	                <span id="inputCredited">$100.000.000</span>
+	              </div>
+	              <div>
+	                <label for="inputCredited">monto pendiente</label>  
+	                <span id="inputCredited">$100.000.000</span>
+	              </div>
+	            </div>
+			  </div>
+		  </div>
+          <div class="card card-list card-row d-flex flex-row">
+            <form action="" class="d-flex justify-content-between align-items-end">
+              <div class="form-group">
+                <label for="inputFn">fecha de pago</label>  
+                <span id="inputFn">7/7/2020</span>
+              </div>
+              <div class="form-group">
+                <label for="inputDateLast">Nº comprobante</label>  
+                <span id="inputDateLast">1000234556</span>
+              </div>
+              <div class="form-group">
+                <label for="inputLocale">documentos</label>  
+                <span id="inputLocale">3</span>
+              </div>
+              <div class="form-group">
+                <label for="inputMount">monto pagado</label>  
+                <span id="inputMount">$100.000.000</span>
+              </div>
+              <div class="buttons-icon">
+	              <a href="#"><i class="far fa-envelope text-primary"></i></a>
+	              <a href="#"><i class="far fa-file-pdf text-primary"></i></a>
+	              <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-chevron-down text-primary"></i></button>
+	          </div>
+            </form>
+          </div>
+		  <div id="collapseTwo" class="collapse show" >
+			  <div class="card card-body">
+	            <div class="d-flex justify-content-between align-items-center">
+	              <div data-toggle="tooltip" data-placement="top" title="Vendida"><i class="far fa-times-circle text-danger"></i></div>
+	              <div>
+	                <label for="inputFn">Factura Nº</label>  
+	                <span id="inputFn">23456700</span>
+	              </div>
+	              <div>
+	                <label for="inputDateLast">Vence</label>  
+	                <span id="inputDateLast" class="text-danger">07/07/2020</span>
+	              </div>
+	              <div>
+	                <label for="inputLocale">sucursal</label>  
+	                <span id="inputLocale">Santiago</span>
+	              </div>
+	              <div>
+	                <label for="inputMount">monto total</label>  
+	                <span id="inputMount">$100.000.000</span>
+	              </div>
+	              <div>
+	                <label for="inputCredited">abonado</label>  
+	                <span id="inputCredited">$100.000.000</span>
+	              </div>
+	              <div>
+	                <label for="inputCredited">monto pendiente</label>  
+	                <span id="inputCredited">$100.000.000</span>
+	              </div>
+	            </div>
+	            <hr>
+	            <div class="d-flex justify-content-between align-items-center">
+	              <div data-toggle="tooltip" data-placement="top" title="Por vencer"><i class="fa fa-exclamation-circle text-warning"></i></div>
+	              <div>
+	                <label for="inputFn">Factura Nº</label>  
+	                <span id="inputFn">23456700</span>
+	              </div>
+	              <div>
+	                <label for="inputDateLast">Vence</label>  
+	                <span id="inputDateLast">07/07/2020</span>
+	              </div>
+	              <div>
+	                <label for="inputLocale">sucursal</label>  
+	                <span id="inputLocale">Santiago</span>
+	              </div>
+	              <div>
+	                <label for="inputMount">monto total</label>  
+	                <span id="inputMount">$100.000.000</span>
+	              </div>
+	              <div>
+	                <label for="inputCredited">abonado</label>  
+	                <span id="inputCredited">$100.000.000</span>
+	              </div>
+	              <div>
+	                <label for="inputCredited">monto pendiente</label>  
+	                <span id="inputCredited">$100.000.000</span>
+	              </div>
+	            </div>
+	            <hr>
+	            <div class="d-flex justify-content-between align-items-center">
+	              <div data-toggle="tooltip" data-placement="top" title="Pagado"><i class="far fa-check-circle text-success"></i></div>
+	              <div>
+	                <label for="inputFn">Factura Nº</label>  
+	                <span id="inputFn">23456700</span>
+	              </div>
+	              <div>
+	                <label for="inputDateLast">Vence</label>  
+	                <span id="inputDateLast">07/07/2020</span>
+	              </div>
+	              <div>
+	                <label for="inputLocale">sucursal</label>  
+	                <span id="inputLocale">Santiago</span>
+	              </div>
+	              <div>
+	                <label for="inputMount">monto total</label>  
+	                <span id="inputMount">$100.000.000</span>
+	              </div>
+	              <div>
+	                <label for="inputCredited">abonado</label>  
+	                <span id="inputCredited">$100.000.000</span>
+	              </div>
+	              <div>
+	                <label for="inputCredited">monto pendiente</label>  
+	                <span id="inputCredited">$100.000.000</span>
+	              </div>
+	            </div>
+			  </div>
+		  </div>
+          <div class="card card-list card-row d-flex flex-row">
+            <form action="" class="d-flex justify-content-between align-items-end">
+              <div class="form-group">
+                <label for="inputFn">fecha de pago</label>  
+                <span id="inputFn">7/7/2020</span>
+              </div>
+              <div class="form-group">
+                <label for="inputDateLast">Nº comprobante</label>  
+                <span id="inputDateLast">1000234556</span>
+              </div>
+              <div class="form-group">
+                <label for="inputLocale">documentos</label>  
+                <span id="inputLocale">3</span>
+              </div>
+              <div class="form-group">
+                <label for="inputMount">monto pagado</label>  
+                <span id="inputMount">$100.000.000</span>
+              </div>
+              <div class="buttons-icon">
+	              <a href="#"><i class="far fa-envelope text-primary"></i></a>
+	              <a href="#"><i class="far fa-file-pdf text-primary"></i></a>
+	              <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseThird" aria-expanded="false" aria-controls="collapseThird"><i class="fa fa-chevron-down text-primary"></i></button>
+	          </div>
+            </form>
+          </div>
+		  <div id="collapseThird" class="collapse show" >
+			  <div class="card card-body">
+	            <div class="d-flex justify-content-between align-items-center">
+	              <div data-toggle="tooltip" data-placement="top" title="Vendida"><i class="far fa-times-circle text-danger"></i></div>
+	              <div>
+	                <label for="inputFn">Factura Nº</label>  
+	                <span id="inputFn">23456700</span>
+	              </div>
+	              <div>
+	                <label for="inputDateLast">Vence</label>  
+	                <span id="inputDateLast" class="text-danger">07/07/2020</span>
+	              </div>
+	              <div>
+	                <label for="inputLocale">sucursal</label>  
+	                <span id="inputLocale">Santiago</span>
+	              </div>
+	              <div>
+	                <label for="inputMount">monto total</label>  
+	                <span id="inputMount">$100.000.000</span>
+	              </div>
+	              <div>
+	                <label for="inputCredited">abonado</label>  
+	                <span id="inputCredited">$100.000.000</span>
+	              </div>
+	              <div>
+	                <label for="inputCredited">monto pendiente</label>  
+	                <span id="inputCredited">$100.000.000</span>
+	              </div>
+	            </div>
+	            <hr>
+	            <div class="d-flex justify-content-between align-items-center">
+	              <div data-toggle="tooltip" data-placement="top" title="Por vencer"><i class="fa fa-exclamation-circle text-warning"></i></div>
+	              <div>
+	                <label for="inputFn">Factura Nº</label>  
+	                <span id="inputFn">23456700</span>
+	              </div>
+	              <div>
+	                <label for="inputDateLast">Vence</label>  
+	                <span id="inputDateLast">07/07/2020</span>
+	              </div>
+	              <div>
+	                <label for="inputLocale">sucursal</label>  
+	                <span id="inputLocale">Santiago</span>
+	              </div>
+	              <div>
+	                <label for="inputMount">monto total</label>  
+	                <span id="inputMount">$100.000.000</span>
+	              </div>
+	              <div>
+	                <label for="inputCredited">abonado</label>  
+	                <span id="inputCredited">$100.000.000</span>
+	              </div>
+	              <div>
+	                <label for="inputCredited">monto pendiente</label>  
+	                <span id="inputCredited">$100.000.000</span>
+	              </div>
+	            </div>
+	            <hr>
+	            <div class="d-flex justify-content-between align-items-center">
+	              <div data-toggle="tooltip" data-placement="top" title="Pagado"><i class="far fa-check-circle text-success"></i></div>
+	              <div>
+	                <label for="inputFn">Factura Nº</label>  
+	                <span id="inputFn">23456700</span>
+	              </div>
+	              <div>
+	                <label for="inputDateLast">Vence</label>  
+	                <span id="inputDateLast">07/07/2020</span>
+	              </div>
+	              <div>
+	                <label for="inputLocale">sucursal</label>  
+	                <span id="inputLocale">Santiago</span>
+	              </div>
+	              <div>
+	                <label for="inputMount">monto total</label>  
+	                <span id="inputMount">$100.000.000</span>
+	              </div>
+	              <div>
+	                <label for="inputCredited">abonado</label>  
+	                <span id="inputCredited">$100.000.000</span>
+	              </div>
+	              <div>
+	                <label for="inputCredited">monto pendiente</label>  
+	                <span id="inputCredited">$100.000.000</span>
+	              </div>
+	            </div>
+			  </div>
+		  </div>
+          <nav aria-label="Page navigation example" class="d-flex flex-row justify-content-center mt-4">
+			  <ul class="pagination">
+			    <li class="page-item">
+			      <a class="page-link" href="#" aria-label="Previous">
+			        <span aria-hidden="true">&laquo;</span>
+			      </a>
+			    </li>
+			    <li class="page-item"><a class="page-link" href="#">1</a></li>
+			    <li class="page-item"><a class="page-link" href="#">2</a></li>
+			    <li class="page-item"><a class="page-link" href="#">3</a></li>
+			    <li class="page-item">
+			      <a class="page-link" href="#" aria-label="Next">
+			        <span aria-hidden="true">&raquo;</span>
+			      </a>
+			    </li>
+			  </ul>
+			</nav>
+        </div>
+      </div>
+    </div>
+  <footer id="footer">
+    <div class="container pt-4 d-flex justify-content-between">
+      <div class="copyright">
+        <!-- &copy; Copyright <strong><span>Socofar</span></strong>. All Rights Reserved -->
+      </div>
+      <div class="logo">
+        <img class="" src="assets/img/logotipo-gray.svg" alt="" width="150">
+        <p>©2020</p>
+      </div>
+
+      <div class="credits">
+        <!-- Designed by <a href="https://bootstrapmade.com/">Soledad Moris</a> -->
+      </div>
+    </div>
+  </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script src="node_modules/gijgo/js/gijgo.min.js"></script>
+    <script type="module" src="assets/js/starter.js"></script>
+    <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+  </body>
+</html>
