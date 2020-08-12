@@ -18,6 +18,7 @@
 }
 .card-list{
 	margin-bottom: 5px;
+	z-index: 1;
 	form{
 		width: 100%;
 	}
@@ -38,5 +39,4 @@
 	background: $socofar-gray_color;
 	margin-top: -17px;
 	padding-top: 40px;
-	z-index: -1;
 }
