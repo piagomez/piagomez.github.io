@@ -2,11 +2,14 @@
 $btn-primary_bg: #047BFE;
 $btn-primary-box: 2px 2px 3px rgba(0, 0, 0, 0.15);
 $btn-primary-p: 9px 20px 8px 20px;
-
+button:focus {
+    outline: none;
+}
 .btn{
 	border-radius: 50px;
 	box-shadow: $btn-primary-box;
-	padding: $btn-primary-p
+	padding: $btn-primary-p;
+	text-transform: uppercase;
 }
 .btn-primary{
 	background: $btn-primary_bg;
@@ -34,4 +37,18 @@ $btn-primary-p: 9px 20px 8px 20px;
 	background: transparent;
 	box-shadow: none;
 	outline: 0;
+}
+
+.input-group>.input-group-append>.btn{
+    border: 0;
+    border-radius: 0.25em;    
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+}
+.gj-datepicker {
+	.input-group-append {
+	    margin-left: -38px;
+	}
+	&.input-group>.form-control:not(:last-child), &.input-group>.custom-select:not(:last-child){
+	    border-radius: 0.25em;
+    }
 }

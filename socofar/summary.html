@@ -4,33 +4,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/css/starter.css">
-    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <title>Socofar - Pago exitoso</title>
   </head>
   <body>
-    <header id="header" class="fixed-top">
-    <div class="d-flex align-items-center">
-      <div class="logo mr-auto"><a href="portal.html">
-                <img class="mb-2" src="./assets/img/logotipo.svg" alt="" width="120">
-              </a></div>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo mr-auto"><img src="./assets/img/logo.png" alt=""></a>-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+      <a class="navbar-brand" href="index.html"><img class="mb-2" src="./assets/img/logotipo.svg" alt="" width="120"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <nav class="nav-menu navbar navbar-expand-lg">
-        <ul>
-          <!-- <li class="active"><a href="pedidos.html">Pedidos</a></li> -->
-          <li class="active"><a href="portal.html">Pedidos</a></li>
-          <li><a href="pagos.html">Historial de Pagos</a></li>
-          <li><a href="#">Opciones</a></li>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a class="nav-link" href="portal.html">Pedidos <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="pagos.html">Historial de Pagos <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Opciones</a>
+          </li>
         </ul>
-      </nav><!-- .nav-menu -->
-
-    </div>
-  </header>
-    <div class="portal-content">
-      <div class="row">
-        <div class="col-md-4 col-lg-3 aos-init aos-animate text-center d-none d-md-block" data-aos="fade-right" data-aos-delay="100" data-aos="fade-left" >
-          <div class="card resume-content">
+      </div>
+    </nav>
+    <div class="portal-content d-flex">
+      <div class="row m-auto">
+        <div class="col-lg-3 aos-init aos-animate text-center d-none d-lg-block" data-aos="fade-right" data-aos-delay="100" data-aos="fade-left" >
+          <div class="card resume-content float-right">
             <div class="card-header"><img src="./assets/img/mask-resume.svg" alt=""></div>
             <div class="card-body">
               <div class="card-text">
@@ -48,7 +45,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-8 col-lg-9 aos-init aos-animate content d-flex flex-column mt-1 mb-5" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-md-12 col-lg-9 aos-init aos-animate content d-flex flex-column mt-1 mb-5" data-aos="fade-up" data-aos-delay="100">
           <h3>Pago realizado</h3>
           <h2>resumen de pago</h2>
           <div class="card">
