@@ -163,7 +163,7 @@ h3{
 	font-style: normal;
 	font-weight: 600;
 	font-size: 25px;
-	line-height: 22px;
+	line-height: 25px;
 }
 span{
 	font-family: "Roboto";
@@ -191,6 +191,18 @@ span{
   overflow-x: auto;
   min-width: 892px;
 }
+
+
+/*--------------------------------------------------------------
+# Responsive
+--------------------------------------------------------------*/
+
+@media screen and (max-width: 1189px ) {
+  .resume-content{
+    display: none !important;
+  }
+}
+
 /*--------------------------------------------------------------
 # Contents
 --------------------------------------------------------------*/
@@ -348,9 +360,6 @@ body {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
-.resume-content{
-	width: 260px;
-}
 .card-header{
 	box-shadow: $card-box;
 	padding: 0; 
