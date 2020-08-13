@@ -178,14 +178,14 @@ span{
 }
 .navbar-nav{
   padding-right: 30px;
-  .nav-link, .navbar-expand-lg .navbar-nav .nav-link{
-    padding: 7px 20px !important;
-    margin: 0 22px !important;
+  .nav-link, .navbar-expand-lg .navbar-nav .nav-link{    margin: 0 22px !important;
   }
 }
 .navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active{
   background: rgba(255, 255, 255, 0.25);
   border-radius: 20px;
+  padding: 7px 20px !important;
+
 }
 /*--------------------------------------------------------------
 # Contents
