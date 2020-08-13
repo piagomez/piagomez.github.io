@@ -7,23 +7,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <title>Socofar - Pago exitoso</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
-      <a class="navbar-brand" href="index.html"><img class="mb-2" src="./assets/img/logotipo.svg" alt="" width="120"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <body class="w-1200">
+    <header class="fixed-top bg-primary">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html"><img class="mb-2" src="./assets/img/logotipo.svg" alt="" width="120"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a class="nav-link" href="portal.html">Pedidos <span class="sr-only">(current)</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="pagos.html">Historial de Pagos <span class="sr-only">(current)</span></a></li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Opciones</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a class="nav-link" href="portal.html">Pedidos <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="pagos.html">Historial de Pagos <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Opciones</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <div class="portal-content d-flex">
       <div class="row mx-auto">
         <div class="col-lg-3 aos-init aos-animate text-center d-none d-lg-block mx-auto resume-content" data-aos="fade-right" data-aos-delay="100" data-aos="fade-left" >
@@ -48,7 +50,7 @@
         <div class="col-md-12 col-lg-9 aos-init aos-animate content d-flex flex-column mt-1 mb-5 content-right mx-auto" data-aos="fade-up" data-aos-delay="100">
           <h3>Pago realizado</h3>
           <h2>resumen de pago</h2>
-          <div class="card">
+          <div class="card card-content">
             <div class="row d-flex flex-row px-5 pt-5 mb-0 justify-items-between  align-items-start">
               <div class="col-2 text-center p-0">
                 <img src="./assets/img/check.svg" alt="">
@@ -56,18 +58,18 @@
               <div class="col-10">
                 <p>Has realizado un pago en línea a través de Banco de Chile.
   Hemos enviado copia(s) del comprobante al correo <a href="mailto:finanzas.@interno.clinicaalemana.cl">finanzas.@interno.clinicaalemana.cl</a>.</p>
-                <div class="card card-row d-flex flex-row justify-content-between mb-2">
+                <div class="card card-row d-flex flex-row justify-content-between align-items-start mb-4 p-3">
                   <div class="form-group">
                     <label for="inputLocale">comprobante Nº</label>  
                     <span id="inputLocale">334455667788</span>
                   </div>
-                  <div class="form-group">
-                    <label for="inputMount">fecha de pago</label>  
-                    <span id="inputMount">14/07/2020</span>
+                  <div class="form-group text-center">
+                    <label for="inputMount" class="justify-content-center text-center">fecha de pago</label>  
+                    <span id="inputMount" class="justify-content-center text-center">14/07/2020</span>
                   </div>
                   <div class="form-group">
-                    <label for="inputCredited">pagado</label>  
-                    <span id="inputCredited">$100.000.000</span>
+                    <label for="inputCredited" class="justify-content-end text-right pb-0">pagado</label>  
+                    <h4 id="inputCredited" class="justify-content-end text-right mb-0">$100.000.000</h4>
                   </div>
                 </div>
                 <p>Puedes revisar el comprobante en <a href="">nuestro sitio web</a> o <a href="">descargarlo en formato PDF</a>.</p>
@@ -79,19 +81,19 @@
                 <img src="./assets/img/email.svg" alt="">
               </div>
               <div class="col-10">
-                <form action="" class="d-flow flex-row">
-                  <div class="form-group">
+                <form action="" class=" d-flex align-items-center justify-content-start flex-row">
+                  <div class="form-group w-100">
                     <label for="">enviar una copia del comprobante a:</label>
                     <input type="email" placeholder="correo@empresa.cl" class="form-control">
                   </div>
-                  <button type="submit" class="btn btn-outline-secondary  align-self-start" desabled>ENVIAR</button>
+                  <button type="submit" class="btn btn-outline-secondary px-5 mx-2" desabled>ENVIAR</button>
                 </form>
               </div>
             </div>
           </div>
 
           <br>
-          <div class="container row mt-2 mb-5 row-buttons">
+          <div class="row mt-2 mb-5 row-buttons">
             <a class="btn btn-primary mr-3" href="#">descargar pdf</a>
             <a class="btn btn-outline-primary" href="portal.html">volver al inicio</a>
           </div>

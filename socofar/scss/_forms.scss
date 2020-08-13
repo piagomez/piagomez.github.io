@@ -16,8 +16,27 @@ input{
 	box-sizing: border-box;
 	border-radius: $input-r;
 	padding: $input-p;
+	height: 40px;
+}
+input.form-control{
+	height: 40px;
+}
+.gj-datepicker input,.gj-datepicker.input-group>.form-control{
+	width: 130px;
 }
 .gj-datepicker span button{
     padding: 0px;
     box-shadow: none;
+}
+.custom-control-input:checked + label{
+	color: #047BFE;
+}
+.custom-select{
+
+    padding: .375rem 1rem .375rem .75rem !important;
+	background:none !important;
+	-webkit-appearance: auto !important;
+	-moz-appearance: auto !important;
+	-o-appearance: auto !important;
+	appearance: auto !important;
 }

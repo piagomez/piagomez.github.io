@@ -6,6 +6,11 @@
 	box-shadow: $card-box;
 	border-radius: $card-r;
 }
+
+.card .card-body hr{
+	margin-left: -20px;
+	margin-right: -20px;
+}
 .card-bancos{
 	margin-bottom: 19px;
 	.card{ 
@@ -30,8 +35,6 @@
 .card-list{
 	margin-bottom: 3px;
 	margin-top: 3px;
-	z-index: 1;	
-	
 	span{ font-size: 18px; }
 	form{
 		width: 100%;
@@ -53,11 +56,15 @@
 .card-list .form-group .custom-control-label{
 	padding: 0;
 }
-.card-list:last-of-type{
-	background: #E4E9EE;
-}
 .collapse .card{
 	background: $socofar-gray_color;
 	margin-top: -17px;
 	padding-top: 40px;
+}
+
+.accordion .card-body{
+    background: #E4E9EE;
+}
+.accordion>.card:not(:last-of-type),.accordion>.card:not(:first-of-type){
+	border-radius: 10px !important;
 }

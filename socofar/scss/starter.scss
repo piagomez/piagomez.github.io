@@ -156,7 +156,6 @@ h2{
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
   font-weight: normal;
-  margin-top: 30px;
 }
 h3{
 	font-family: "Josefin Sans";
@@ -192,6 +191,15 @@ span{
   min-width: 892px;
 }
 
+.w-1200{
+  .navbar{
+    max-width: 1200px;
+    margin: auto;
+  }
+  .card-list, .card-bancos, .card-content{
+    width: 850px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Responsive
@@ -207,16 +215,26 @@ span{
 # Contents
 --------------------------------------------------------------*/
 
-.login-content, .portal-content{
+.login-content, .portal-content, .pagos-content{
 	min-height: calc( 100vh - 110px);
   overflow: hidden;
 }
-.portal-content{
+.portal-content, .pagos-content{
   padding-top: 100px;
   .row{
     margin-left: 0;
     margin-right: 0;
     overflow: auto;  
+  }  
+}
+.portal-content{
+  .card-list:last-of-type{
+    background: #E4E9EE;
+  }
+}
+.pagos-content{
+  .custom-select{ 
+    width: 341px !important;
   }
 }
 /*--------------------------------------------------------------
