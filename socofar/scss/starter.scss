@@ -187,6 +187,10 @@ span{
   padding: 7px 20px !important;
 
 }
+.content-right{
+  overflow-x: auto;
+  min-width: 892px;
+}
 /*--------------------------------------------------------------
 # Contents
 --------------------------------------------------------------*/
@@ -197,6 +201,11 @@ span{
 }
 .portal-content{
   padding-top: 100px;
+  .row{
+    margin-left: 0;
+    margin-right: 0;
+    overflow: auto;  
+  }
 }
 /*--------------------------------------------------------------
 # Login Form
@@ -339,9 +348,6 @@ body {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
-.portal-content{
-	padding-left: 68px;
-}
 .resume-content{
 	width: 260px;
 }
